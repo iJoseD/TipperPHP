@@ -23,25 +23,24 @@
 
     <div class="row mt-5 login">
         <div class="col-12">
-            <input type="tel" id="tel--login" class="form-control" placeholder="(201) 555-5555">
+            <label for="tel--login" class="form-label">Login with your phone number:</label>
+            <input type="tel" id="tel--login" class="form-control text-center" placeholder="(201) 555-5555">
         </div>
-        <div class="col-12 mt-3">
+        <div class="col-12 mt-3 text-center">
             <input class="form-check-input" type="radio" name="flexRadioDefault" id="acept--terms" checked>
             <label class="form-check-label" for="acept--terms">Accept <a href="http://">terms and conditions</a></label>
         </div>
-        <div class="col-12 d-grid mt-3">
+        <div class="col-12 d-grid mt-5">
             <button type="button" id="btn--generateCode" class="btn btn-primary">Sig in</button>
         </div>
     </div>
 
     <div class="row mt-5 check-code hide">
         <div class="col-12">
-            <p>Enter the code that we have sent to the number: +57 <span class="number"></span></p>
+            <label for="tel--login" class="form-label">Enter the code that we have sent to the number: <span class="number"></span></label>
+            <input type="number" id="check--code" class="form-control text-center">
         </div>
-        <div class="col-12 mt-3">
-            <input type="number" id="check--code" class="form-control">
-        </div>
-        <div class="col-12 d-grid mt-3">
+        <div class="col-12 d-grid mt-5">
             <button type="button" id="btn--checkCode" class="btn btn-primary">Check code</button>
         </div>
     </div>
