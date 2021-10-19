@@ -1,16 +1,16 @@
 <section class="container">
-    <div class="row bgAzul">
+    <div class="row header">
         <div class="col-12">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <figure>
                         <img src="/wp-content/uploads/2021/08/newIsotipo.svg" alt="Logo ThankYou Tipper">
                     </figure>
                 </div>
             </div>
-            <div class="row">
+            <div class="row welcome">
                 <div class="col-6">
-                    <p class="text-withe">Welcome to</p>
+                    <p class="text-white">Welcome to</p>
                 </div>
                 <div class="col-6">
                     <figure>
