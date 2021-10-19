@@ -29,6 +29,7 @@
 #btn--checkCode {
   border-radius: 50px;
   background-color: #0c055f !important;
+  border: none !important;
 }
 
 span.number {
