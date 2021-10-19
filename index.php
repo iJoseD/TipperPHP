@@ -13,7 +13,7 @@
     </head>
     <body>
         <!-- Login -->
-        <?php require_once('layouts/dashboard.php'); ?>
+        <?php require_once('layouts/login.php'); ?>
         
         <!-- Bootstrap Bundle with Popper -->
         <?php require_once('dist/requireFooter.php'); ?>
