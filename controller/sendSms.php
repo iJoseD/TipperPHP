@@ -21,32 +21,37 @@ if ( $caso == 'codeActivation' ) {
     $result = $conn->query($sql);
     
     if ($result->num_rows > 0) {
-        $curl = curl_init();
+        $sql = "UPDATE userProfile SET codeActivation = '$code' WHERE phone = '$phone'";
+        if ($conn->query($sql) === TRUE) {
+            $curl = curl_init();
 
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://api.instasent.com/sms/",
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => "",
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 30,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => "POST",
-            CURLOPT_POSTFIELDS => "{\"from\":\"Tipper\",\"to\":\"$phone\",\"text\":\"ThankYou Tipper: $code is your confirmation code. Don't reply to this message with your code.\"}",
-            CURLOPT_HTTPHEADER => array(
-                "authorization: Bearer 2a3aea0bcee508cb2156a5a5a8bf926488bf9c0b",
-                "content-type: application/json"
-            ),
-        ));
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => "https://api.instasent.com/sms/",
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => "",
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 30,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => "POST",
+                CURLOPT_POSTFIELDS => "{\"from\":\"Tipper\",\"to\":\"$phone\",\"text\":\"ThankYou Tipper: $code is your confirmation code. Don't reply to this message with your code.\"}",
+                CURLOPT_HTTPHEADER => array(
+                    "authorization: Bearer 2a3aea0bcee508cb2156a5a5a8bf926488bf9c0b",
+                    "content-type: application/json"
+                ),
+            ));
 
-        $response = curl_exec($curl);
-        $err = curl_error($curl);
+            $response = curl_exec($curl);
+            $err = curl_error($curl);
 
-        curl_close($curl);
+            curl_close($curl);
 
-        if ($err) {
-            echo 'error_send_sms';
+            if ($err) {
+                echo 'error_send_sms';
+            } else {
+                echo 'success_sms';
+            }
         } else {
-            echo 'success_sms';
+            echo 'error_update_db';
         }
     } else {
         $sql = "INSERT INTO userProfile (avatar, dni, firstname, lastname, email, phone, codeActivation, status, date) VALUES ('', '', '', '', '', '$phone', '$code', 'pending_activation', '$date')";
