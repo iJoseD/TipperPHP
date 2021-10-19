@@ -51,7 +51,7 @@ $('#btn--checkCode').click(function() {
 
             if ( data == 'update_success' ) {
                 $.cookie('session', cookie, { expires: 30, path: '/' });
-                window.location.href = '/app/profile/';
+                window.location.href = '/app/profile/edit';
             
             } else if ( data == 'login_successful' ) {
                 window.location.href = '/app';
