@@ -22,12 +22,12 @@
     </div>
 
     <div class="row mt-5 login">
-        <div class="col-12">
+        <div class="col-12 text-center">
             <label for="tel--login" class="form-label">Login with your phone number:</label>
             <input type="tel" id="tel--login" class="form-control text-center" placeholder="(201) 555-5555">
         </div>
         <div class="col-12 mt-3 text-center">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="acept--terms" checked>
+            <input class="form-check-input" type="radio" name="acept--terms" id="acept--terms">
             <label class="form-check-label" for="acept--terms">Accept <a href="http://">terms and conditions</a></label>
         </div>
         <div class="col-12 d-grid mt-5">
