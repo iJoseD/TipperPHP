@@ -1,7 +1,3 @@
-$('#tel--login').intlTelInput({
-    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js"
-});
-
 $('#btn--generateCode').click(function() {
     var phone = '+57' + $('#tel--login').val();
 
