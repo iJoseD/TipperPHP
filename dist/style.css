@@ -5,3 +5,14 @@
   background-repeat: no-repeat;
   padding: 2em;
 }
+
+.iconotipo img { width: 40%; }
+
+.logo img { width: 60%; }
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2em;
+}
