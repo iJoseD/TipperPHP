@@ -28,7 +28,7 @@ if ( $caso == 'codeActivation' ) {
             CURLOPT_TIMEOUT => 30,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => "POST",
-            CURLOPT_POSTFIELDS => "{\"from\":\"Tipper\",\"to\":\"$phone\",\"text\":\"ThankYou Tipper: 2550 is your confirmation code. Don't reply to this message with your code.\"}",
+            CURLOPT_POSTFIELDS => "{\"from\":\"Tipper\",\"to\":\"$phone\",\"text\":\"ThankYou Tipper: $code is your confirmation code. Don't reply to this message with your code.\"}",
             CURLOPT_HTTPHEADER => array(
                 "authorization: Bearer 2a3aea0bcee508cb2156a5a5a8bf926488bf9c0b",
                 "content-type: application/json"
