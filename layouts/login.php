@@ -30,7 +30,7 @@
             <label class="form-check-label" for="acept--terms">Accept <a href="http://">terms and conditions</a></label>
         </div>
         <div class="col-12">
-            <button type="button" id="btn--sigin" class="btn btn-primary">Sig in</button>
+            <button type="button" id="btn--generateCode" class="btn btn-primary">Sig in</button>
         </div>
     </div>
 </section>
