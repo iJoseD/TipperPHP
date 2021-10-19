@@ -49,7 +49,7 @@ if ( $caso == 'codeActivation' ) {
             echo 'success_sms';
         }
     } else {
-        $sql = "INSERT INTO userProfile (avatar, dni, firstname, lastname, email, phone, codeActivation, status, date) VALUES ('', '', '', '', '', '$phone', '$code', 'pending_activation', $date)";
+        $sql = "INSERT INTO userProfile (avatar, dni, firstname, lastname, email, phone, codeActivation, status, date) VALUES ('', '', '', '', '', '$phone', '$code', 'pending_activation', '$date')";
 
         if ($conn->query($sql) === TRUE) {
             $curl = curl_init();
