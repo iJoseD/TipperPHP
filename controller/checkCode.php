@@ -1,0 +1,38 @@
+<?php
+
+// MySQLi
+$servername = "localhost";
+$username   = "app_tipper_user";
+$password   = "Ma3h!h57";
+$dbname     = "app_tipper";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
+
+// Var
+$caso   = $_POST['caso'];
+$phone  = $_POST['phone'];
+$code   = $_POST['code'];
+
+if ( $caso == 'checkCode' ) {
+    $sql = "SELECT * FROM userProfile WHERE phone = '$phone'";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            if ( $row['codeActivation'] == $code ) {
+                $sql = "UPDATE userProfile SET status = 'incomplete_profile' WHERE phone = '$phone'";
+
+                if ($conn->query($sql) === TRUE) {
+                    echo 'update_success';
+                } else {
+                    echo 'error_update_db';
+                }
+            } else {
+                echo 'invalid_code';
+            }
+        }
+    }
+
+    $conn->close();
+}

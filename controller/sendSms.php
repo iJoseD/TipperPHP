@@ -14,6 +14,7 @@ $caso = $_POST['caso'];
 $phone = $_POST['phone'];
 $code = rand(1000, 9999);
 
+// codeActivation
 if ( $caso == 'codeActivation' ) {
     $sql = "INSERT INTO userProfile (avatar, dni, firstname, lastname, email, phone, codeActivation, status) VALUES ('', '', '', '', '', '$phone', '$code', 'pending_activation')";
 
@@ -47,6 +48,19 @@ if ( $caso == 'codeActivation' ) {
         }
     } else {
         echo 'error_insert_db';
+    }
+
+    $conn->close();
+}
+
+// checkCode
+if ( $caso == 'checkCode' ) {
+    $sql = "UPDATE userProfile SET status = 'incomplete_profile' WHERE phone = '$phone'";
+
+    if ($conn->query($sql) === TRUE) {
+        echo 'update_success';
+    } else {
+        echo 'error_update_db';
     }
 
     $conn->close();

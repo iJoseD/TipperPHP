@@ -22,7 +22,7 @@
     </div>
 
     <div class="row mt-5 login">
-        <div class="col-12 mt-3">
+        <div class="col-12">
             <input type="tel" id="tel--login" class="form-control" placeholder="(201) 555-5555">
         </div>
         <div class="col-12 mt-3">
@@ -31,6 +31,18 @@
         </div>
         <div class="col-12 d-grid mt-3">
             <button type="button" id="btn--generateCode" class="btn btn-primary">Sig in</button>
+        </div>
+    </div>
+
+    <div class="row mt-5 check-code hide">
+        <div class="col-12">
+            <p>Enter the code that we have sent to the number: +57 <span class="number"></span></p>
+        </div>
+        <div class="col-12 mt-3">
+            <input type="number" id="check--code" class="form-control">
+        </div>
+        <div class="col-12 d-grid mt-3">
+            <button type="button" id="btn--checkCode" class="btn btn-primary">Check code</button>
         </div>
     </div>
 </section>
