@@ -37,6 +37,11 @@ $('#btn--checkCode').click(function() {
         },
         success: function(data) {
             console.log( data );
+
+            if ( data == 'update_success' ) {
+                $.cookie('session', phone, { expires: 30, path: '/' });
+                window.location.href = '/app/profile/';
+            }
         },
         error: function() {
             console.log( 'ajax_generateCode_error' );
