@@ -13,12 +13,14 @@ if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
 $caso = $_POST['caso'];
 $phone = $_POST['phone'];
 $code = rand(1000, 9999);
+$date = date('Y-m-d H:m:s');
 
 // codeActivation
 if ( $caso == 'codeActivation' ) {
-    $sql = "INSERT INTO userProfile (avatar, dni, firstname, lastname, email, phone, codeActivation, status) VALUES ('', '', '', '', '', '$phone', '$code', 'pending_activation')";
-
-    if ($conn->query($sql) === TRUE) {
+    $sql = "SELECT * FROM userProfile WHERE phone = '$phone'";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
@@ -47,20 +49,39 @@ if ( $caso == 'codeActivation' ) {
             echo 'success_sms';
         }
     } else {
-        echo 'error_insert_db';
-    }
+        $sql = "INSERT INTO userProfile (avatar, dni, firstname, lastname, email, phone, codeActivation, status, date) VALUES ('', '', '', '', '', '$phone', '$code', 'pending_activation', $date)";
 
-    $conn->close();
-}
+        if ($conn->query($sql) === TRUE) {
+            $curl = curl_init();
 
-// checkCode
-if ( $caso == 'checkCode' ) {
-    $sql = "UPDATE userProfile SET status = 'incomplete_profile' WHERE phone = '$phone'";
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => "https://api.instasent.com/sms/",
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => "",
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 30,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => "POST",
+                CURLOPT_POSTFIELDS => "{\"from\":\"Tipper\",\"to\":\"$phone\",\"text\":\"ThankYou Tipper: $code is your confirmation code. Don't reply to this message with your code.\"}",
+                CURLOPT_HTTPHEADER => array(
+                    "authorization: Bearer 2a3aea0bcee508cb2156a5a5a8bf926488bf9c0b",
+                    "content-type: application/json"
+                ),
+            ));
 
-    if ($conn->query($sql) === TRUE) {
-        echo 'update_success';
-    } else {
-        echo 'error_update_db';
+            $response = curl_exec($curl);
+            $err = curl_error($curl);
+
+            curl_close($curl);
+
+            if ($err) {
+                echo 'error_send_sms';
+            } else {
+                echo 'success_sms';
+            }
+        } else {
+            echo 'error_insert_db';
+        }
     }
 
     $conn->close();

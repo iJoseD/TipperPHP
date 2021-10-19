@@ -21,12 +21,16 @@ if ( $caso == 'checkCode' ) {
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             if ( $row['codeActivation'] == $code ) {
-                $sql = "UPDATE userProfile SET status = 'incomplete_profile' WHERE phone = '$phone'";
+                if ( $row['status'] == 'pending_activation' ) {
+                    $sql = "UPDATE userProfile SET status = 'incomplete_profile' WHERE phone = '$phone'";
 
-                if ($conn->query($sql) === TRUE) {
-                    echo 'update_success';
+                    if ($conn->query($sql) === TRUE) {
+                        echo 'update_success';
+                    } else {
+                        echo 'error_update_db';
+                    }
                 } else {
-                    echo 'error_update_db';
+                    echo 'login_successful';
                 }
             } else {
                 echo 'invalid_code';

@@ -1,7 +1,11 @@
 $(document).ready(function () {
     var session = $.cookie('session');
 
-    console.log( session );
+    if ( session == undefined ) {
+        window.location.href = '/app/login/';
+    } else {
+        window.location.href = '/app/';
+    }
 });
 
 $('#btn--generateCode').click(function() {
@@ -48,6 +52,9 @@ $('#btn--checkCode').click(function() {
             if ( data == 'update_success' ) {
                 $.cookie('session', cookie, { expires: 30, path: '/' });
                 window.location.href = '/app/profile/';
+            
+            } else if ( data == 'login_successful' ) {
+                window.location.href = '/app';
             }
         },
         error: function() {
