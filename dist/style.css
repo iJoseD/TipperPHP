@@ -19,7 +19,21 @@
   margin-top: 2em;
 }
 
-input#tel--login {
+#tel--login,
+#check--code {
   border-radius: 50px;
   border: 2px solid #0c055f;
+}
+
+#btn--generateCode,
+#btn--checkCode {
+  border-radius: 50px;
+  background-color: #0c055f !important;
+}
+
+span.number {
+  background-color: #ff3127;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
 }

@@ -36,7 +36,7 @@
     </div>
 
     <div class="row mt-5 check-code hide">
-        <div class="col-12">
+        <div class="col-12 text-center">
             <label for="tel--login" class="form-label">Enter the code that we have sent to the number: <span class="number"></span></label>
             <input type="number" id="check--code" class="form-control text-center">
         </div>
