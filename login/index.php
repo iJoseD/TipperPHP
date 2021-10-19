@@ -16,6 +16,6 @@
         <?php require_once('../layouts/login.php'); ?>
         
         <!-- Bootstrap Bundle with Popper -->
-        <?php require_once('/app/dist/requireFooter.php'); ?>
+        <?php require_once('../dist/requireFooter.php'); ?>
     </body>
 </html>

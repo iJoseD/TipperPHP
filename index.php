@@ -13,9 +13,9 @@
     </head>
     <body>
         <!-- Login -->
-        <?php require_once('/app/layouts/dashboard.php'); ?>
+        <?php require_once('layouts/dashboard.php'); ?>
         
         <!-- Bootstrap Bundle with Popper -->
-        <?php require_once('/app/dist/requireFooter.php'); ?>
+        <?php require_once('dist/requireFooter.php'); ?>
     </body>
 </html>
