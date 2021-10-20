@@ -26,7 +26,8 @@
 }
 
 #btn--generateCode,
-#btn--checkCode {
+#btn--checkCode,
+#btn--updateProfile {
   border-radius: 50px;
   background-color: #0c055f !important;
   border: none !important;
@@ -45,7 +46,7 @@ span.number {
 
 #profile-edit section.container {
   background-color: #fff;
-  margin-top: 4em;
+  margin: 4em 0em;
   padding: 5em 1em;
   border-radius: 50px;
 }
@@ -54,3 +55,11 @@ span.number {
 
 .text--blue { color: #0c055f; }
 .text--orange { color: #ff3127; }
+
+span.super-power {
+  text-align: center;
+  background-color: #0c055f;
+  color: #fff;
+  border-radius: 50px;
+  padding: 5px 0px;
+}
