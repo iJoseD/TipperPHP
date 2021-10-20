@@ -14,7 +14,7 @@ $dbname     = "app_tipper";
             <h2 class="text--blue">Create your profile</h2>
         </div>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-5 hide">
         <div class="col-12">
             <label for="img--profile" class="form-label">Select your profile picture</label>
             <input class="form-control" type="file" id="img--profile">
@@ -37,11 +37,13 @@ $dbname     = "app_tipper";
         </div>
     </div>
     <div class="row mt-4">
-        <div class="form-floating col-6">
+        <div class="form-floating col-12">
             <input type="text" class="form-control" id="email">
             <label for="email">Email</label>
         </div>
-        <div class="form-floating col-6">
+    </div>
+    <div class="row mt-4">
+        <div class="form-floating col-12">
             <input type="text" class="form-control" id="phone">
             <label for="phone">Phone</label>
         </div>
@@ -89,7 +91,7 @@ $dbname     = "app_tipper";
     <div class="row mt-5 hide" id="alert">
         <div class="col-12">
             <div class="alert alert-success" role="alert">
-                A simple success alert—check it out!
+                Profile created successfully!
             </div>
         </div>
     </div>
