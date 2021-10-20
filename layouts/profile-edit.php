@@ -36,9 +36,31 @@
             <label for="phone">Phone</label>
         </div>
     </div>
-    <div class="row text-center">
+    <div class="row text-center mt-4">
         <div class="col-12">
-            <h2 class="text--orange">Which is your super power?</h2>
+            <h4 class="text--orange">Which is your super power?</h4>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-4">
+            <span class="super-power artist">Artist</span>
+        </div>
+        <div class="col-4">
+            <span class="super-power creator">Creator</span>
+        </div>
+        <div class="col-4">
+            <span class="super-power server">Server</span>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-4">
+            <span class="super-power tour-guide">Tour-guide</span>
+        </div>
+        <div class="col-4">
+            <span class="super-power influencer">Influencer</span>
+        </div>
+        <div class="col-4">
+            <span class="super-power speaker">Speaker</span>
         </div>
     </div>
     <div class="row mt-5">
