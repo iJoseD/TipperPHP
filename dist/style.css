@@ -49,3 +49,5 @@ span.number {
   padding: 5em 1em;
   border-radius: 50px;
 }
+
+.form-floating > label { left: 10px !important; }
