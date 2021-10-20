@@ -36,7 +36,7 @@
             <label for="phone">Phone</label>
         </div>
     </div>
-    <div class="row text-center mt-4">
+    <div class="row text-center mt-5">
         <div class="col-12">
             <h4 class="text--orange">Which is your super power?</h4>
         </div>
@@ -61,6 +61,11 @@
         </div>
         <div class="col-4 d-grid">
             <span class="super-power speaker">Speaker</span>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <a href="#" class="link-danger">You have not connected your Stripe account, connect now!</a>
         </div>
     </div>
     <div class="row mt-5">
