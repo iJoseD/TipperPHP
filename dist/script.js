@@ -14,7 +14,7 @@ $('#btn--generateCode').click(function() {
     var phone = '+57' + $('#tel--login').val();
 
     $.ajax({
-        url: '/app/controller/sendSms.php',
+        url: '/controller/sendSms.php',
         type: 'POST',
         data: {
             caso    : 'codeActivation',
@@ -41,7 +41,7 @@ $('#btn--checkCode').click(function() {
     var cookie = $('#tel--login').val();
 
     $.ajax({
-        url: '/app/controller/checkCode.php',
+        url: '/controller/checkCode.php',
         type: 'POST',
         data: {
             caso    : 'checkCode',
@@ -53,10 +53,10 @@ $('#btn--checkCode').click(function() {
 
             if ( data == 'update_success' ) {
                 $.cookie('session', cookie, { expires: 30, path: '/' });
-                window.location.href = '/app/profile/edit';
+                window.location.href = '/profile/edit.php';
             
             } else if ( data == 'login_successful' ) {
-                window.location.href = '/app';
+                window.location.href = '/';
             }
         },
         error: function() {
