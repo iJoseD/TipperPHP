@@ -43,24 +43,30 @@
     </div>
     <div class="row mt-4">
         <div class="col-4 d-grid">
-            <span class="super-power artist">Artist</span>
+            <span class="super-power artist" data-superPower="Artist">Artist</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power creator">Creator</span>
+            <span class="super-power creator" data-superPower="Creator">Creator</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power server">Server</span>
+            <span class="super-power server" data-superPower="Server">Server</span>
         </div>
     </div>
     <div class="row mt-4">
         <div class="col-4 d-grid">
-            <span class="super-power tour-guide">Tour-guide</span>
+            <span class="super-power tour-guide" data-superPower="Tour-guide">Tour-guide</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power influencer">Influencer</span>
+            <span class="super-power influencer" data-superPower="Influencer">Influencer</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power speaker">Speaker</span>
+            <span class="super-power speaker" data-superPower="Speaker">Speaker</span>
+        </div>
+    </div>
+    <div class="row hide">
+        <div class="form-floating col-12">
+            <input type="text" class="form-control" id="superPower">
+            <label for="superPower">Super Power</label>
         </div>
     </div>
     <div class="row mt-5">
@@ -68,6 +74,17 @@
             <a href="#" class="link-danger">You have not connected your Stripe account, connect now!</a>
         </div>
     </div>
+
+    <!-- Alert -->
+    <div class="row mt-5 hide">
+        <div class="col-12">
+            <div class="alert alert-success" role="alert">
+                A simple success alert—check it out!
+            </div>
+        </div>
+    </div>
+
+    <!-- Button -->
     <div class="row mt-5">
         <div class="col-12 d-grid">
             <button type="button" id="btn--updateProfile" class="btn btn-primary">Update profile</button>

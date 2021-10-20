@@ -64,3 +64,45 @@ $('#btn--checkCode').click(function() {
         }
     });
 });
+
+$('.super-power').click(function() {
+    var superPower = $(this).attr('data-superPower');
+
+    $('.super-power').removeClass('active');
+    $(this).addClass('active');
+
+    $('#superPower').val(superPower);
+});
+
+$('#btn--updateProfile').click(function() {
+    var dni = $('#dni').val();
+    var firstName = $('#fitst--name').val();
+    var lastName = $('#last--name').val();
+    var email = $('#email').val();
+    var phone = $('#phone').val();
+    var superPower = $('#superPower').val();
+
+    $.ajax({
+        url: '/controller/updateProfile.php',
+        type: 'POST',
+        data: {
+            caso        : 'updateProfile',
+            dni         : dni,
+            firstName   : firstName,
+            lastName    : lastName,
+            email       : email,
+            phone       : phone,
+            superPower  : superPower
+        },
+        success: function(data) {
+            console.log( data );
+
+            if ( data == 'update_success' ) {
+                $(selector).removeClass('hide');
+            }
+        },
+        error: function() {
+            console.log( 'ajax_generateCode_error' );
+        }
+    });
+});
