@@ -5,14 +5,20 @@
             <input class="form-control" type="file" id="img--profile">
         </div>
     </div>
-    <div class="row">
-        <div class="col-6">
-            <label for="first--name" class="form-label">First name</label>
-            <input type="text" class="form-control" id="first--name" placeholder="First name">
+    <div class="row mt-4">
+        <div class="form-floating col-12">
+            <input type="text" class="form-control" id="dni">
+            <label for="dni">DNI</label>
         </div>
-        <div class="col-6">
-            <label for="last--name" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="last--name" placeholder="Last name">
+    </div>
+    <div class="row mt-4">
+        <div class="form-floating col-6">
+            <input type="text" class="form-control" id="fitst--name">
+            <label for="fitst--name">First Name</label>
+        </div>
+        <div class="form-floating col-6">
+            <input type="text" class="form-control" id="last--name">
+            <label for="last--name">Last Name</label>
         </div>
     </div>
 </section>

@@ -38,3 +38,14 @@ span.number {
   padding: 5px 10px;
   border-radius: 10px;
 }
+
+#profile-edit {
+  background-color: #0c055f;
+}
+
+#profile-edit section.container {
+  background-color: #fff;
+  margin-top: 4em;
+  padding: 5em 1em;
+  border-radius: 50px;
+}
