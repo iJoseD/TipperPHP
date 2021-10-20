@@ -98,7 +98,7 @@ $('#btn--updateProfile').click(function() {
             console.log( data );
 
             if ( data == 'update_success' ) {
-                $(selector).removeClass('hide');
+                $('#alert').removeClass('hide');
             }
         },
         error: function() {

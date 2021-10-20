@@ -76,7 +76,7 @@
     </div>
 
     <!-- Alert -->
-    <div class="row mt-5 hide">
+    <div class="row mt-5 hide" id="alert">
         <div class="col-12">
             <div class="alert alert-success" role="alert">
                 A simple success alert—check it out!
