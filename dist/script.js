@@ -3,6 +3,7 @@ $(document).ready(function () {
 
     if ( session == undefined ) {
         if ( window.location.pathname != '/login/' ) {
+            $('body').hide();
             window.location.href = '/login/';
         }
     } else {
