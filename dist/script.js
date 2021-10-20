@@ -1,13 +1,13 @@
 $(document).ready(function () {
     var session = $.cookie('session');
 
-    if ( session == undefined ) {
-        if ( window.location.pathname != '/app/login/' ) {
-            window.location.href = '/app/login/';
-        }
-    } else {
-        window.location.href = '/app/';
-    }
+    // if ( session == undefined ) {
+    //     if ( window.location.pathname != '/app/login/' ) {
+    //         window.location.href = '/app/login/';
+    //     }
+    // } else {
+    //     window.location.href = '/app/';
+    // }
 });
 
 $('#btn--generateCode').click(function() {
