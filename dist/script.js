@@ -11,7 +11,7 @@ $(document).ready(function () {
 });
 
 $('#btn--generateCode').click(function() {
-    var phone = '+57' + $('#tel--login').val();
+    var phone = $('#tel--login').val();
 
     $.ajax({
         url: '/controller/sendSms.php',
@@ -37,8 +37,7 @@ $('#btn--generateCode').click(function() {
 
 $('#btn--checkCode').click(function() {
     var code = $('#check--code').val();
-    var phone = '+57' + $('#tel--login').val();
-    var cookie = $('#tel--login').val();
+    var phone = $('#tel--login').val();
 
     $.ajax({
         url: '/controller/checkCode.php',
@@ -52,7 +51,7 @@ $('#btn--checkCode').click(function() {
             console.log( data );
 
             if ( data == 'update_success' ) {
-                $.cookie('session', cookie, { expires: 30, path: '/' });
+                $.cookie('session', phone, { expires: 30, path: '/' });
                 window.location.href = '/profile/edit.php';
             
             } else if ( data == 'login_successful' ) {

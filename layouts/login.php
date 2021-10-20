@@ -24,7 +24,7 @@
     <div class="row mt-5 login">
         <div class="col-12 text-center">
             <label for="tel--login" class="form-label">Login with your phone number:</label>
-            <input type="tel" id="tel--login" class="form-control text-center" placeholder="(201) 555-5555">
+            <input type="tel" id="tel--login" class="form-control text-center" placeholder="+573004005000">
         </div>
         <div class="col-12 mt-3 text-center">
             <input class="form-check-input" type="radio" name="acept--terms" id="acept--terms">
