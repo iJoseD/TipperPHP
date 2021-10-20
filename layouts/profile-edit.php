@@ -1,3 +1,13 @@
+<?php
+
+// MySQLi
+$servername = "localhost";
+$username   = "app_tipper_user";
+$password   = "Ma3h!h57";
+$dbname     = "app_tipper";
+
+?>
+
 <section class="container">
     <div class="row text-center">
         <div class="col-12">
