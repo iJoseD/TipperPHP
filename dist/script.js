@@ -86,6 +86,7 @@ $('#btn--updateProfile').click(function() {
     var lastName = $('#last--name').val();
     var email = $('#email').val();
     var phone = $('#phone').val();
+    var address = $('#address').val();
     var superPower = $('#superPower').val();
 
     $.ajax({
@@ -98,6 +99,7 @@ $('#btn--updateProfile').click(function() {
             lastName    : lastName,
             email       : email,
             phone       : phone,
+            address     : address,
             superPower  : superPower
         },
         success: function(data) {

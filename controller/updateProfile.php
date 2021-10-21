@@ -16,11 +16,12 @@ $firstName  = $_POST['firstName'];
 $lastName   = $_POST['lastName'];
 $email      = $_POST['email'];
 $phone      = $_POST['phone'];
+$address    = $_POST['address'];
 $superPower = $_POST['superPower'];
 
 // updateProfile
 if ( $caso == 'updateProfile' ) {
-    $sql = "UPDATE userProfile SET dni = '$dni', firstname = '$firstName', lastname = '$lastName', email = '$email', superPower = '$superPower', status = 'profile_created' WHERE phone = '$phone'";
+    $sql = "UPDATE userProfile SET dni = '$dni', firstname = '$firstName', lastname = '$lastName', email = '$email', addres = '$address', superPower = '$superPower', status = 'profile_created' WHERE phone = '$phone'";
 
     if ($conn->query($sql) === TRUE) {
         echo 'update_success';
