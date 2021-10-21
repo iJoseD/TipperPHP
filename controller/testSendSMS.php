@@ -1,12 +1,13 @@
 <?php
 
 require_once('../aws/aws-autoloader.php');
-echo 'Hola';
 // require '../aws/Aws/Sns/SnsClient.php';
 // require '../aws/Aws/Exception/AwsException.php';
 
-// use Aws\Sns\SnsClient; 
-// use Aws\Exception\AwsException;
+use Aws\Sns\SnsClient;
+use Aws\Exception\AwsException;
+
+echo 'Hola x2';
 
 // $SnSclient = new SnsClient([
 //     'profile' => 'default',
