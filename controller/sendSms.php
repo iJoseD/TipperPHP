@@ -15,6 +15,17 @@ $phone = $_POST['phone'];
 $code = rand(1000, 9999);
 $date = date('Y-m-d H:m:s');
 
+// twilloAuthentication
+$sql = "SELECT * FROM twilloAuthentication";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        $TWILIO_ACCOUNT_SID = $row[0]['value'];
+        $TWILIO_AUTH_TOKEN = $row[1]['value'];
+    }
+}
+
 // codeActivation
 if ( $caso == 'codeActivation' ) {
     $sql = "SELECT * FROM userProfile WHERE phone = '$phone'";
@@ -53,11 +64,11 @@ if ( $caso == 'codeActivation' ) {
 
             $ch = curl_init();
 
-            curl_setopt($ch, CURLOPT_URL, 'https://api.twilio.com/2010-04-01/Accounts/ACa3722e6858ed8ab86626bbd17d179f51/Messages.json');
+            curl_setopt($ch, CURLOPT_URL, "https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, "From=%2B19039450637&Body=ThankYou Tipper: $code is your confirmation code. Don't reply to this message with your code.&To=$phone");
-            curl_setopt($ch, CURLOPT_USERPWD, 'ACa3722e6858ed8ab86626bbd17d179f51' . ':' . 'f6fbcb4c9109456d1c4118ff3aaf95b0');
+            curl_setopt($ch, CURLOPT_USERPWD, $TWILIO_ACCOUNT_SID . ':' . $TWILIO_AUTH_TOKEN);
 
             $headers = array();
             $headers[] = 'Content-Type: application/x-www-form-urlencoded';
@@ -108,11 +119,11 @@ if ( $caso == 'codeActivation' ) {
 
             $ch = curl_init();
 
-            curl_setopt($ch, CURLOPT_URL, 'https://api.twilio.com/2010-04-01/Accounts/ACa3722e6858ed8ab86626bbd17d179f51/Messages.json');
+            curl_setopt($ch, CURLOPT_URL, "https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, "From=%2B19039450637&Body=ThankYou Tipper: $code is your confirmation code. Don't reply to this message with your code.&To=$phone");
-            curl_setopt($ch, CURLOPT_USERPWD, 'ACa3722e6858ed8ab86626bbd17d179f51' . ':' . 'f6fbcb4c9109456d1c4118ff3aaf95b0');
+            curl_setopt($ch, CURLOPT_USERPWD, $TWILIO_ACCOUNT_SID . ':' . $TWILIO_AUTH_TOKEN);
 
             $headers = array();
             $headers[] = 'Content-Type: application/x-www-form-urlencoded';
@@ -125,6 +136,7 @@ if ( $caso == 'codeActivation' ) {
             } else {
                 echo 'success_sms';
             }
+            curl_close($ch);
         } else {
             echo 'error_insert_db';
         }
