@@ -44,8 +44,14 @@ $dbname     = "app_tipper";
     </div>
     <div class="row mt-4">
         <div class="form-floating col-12">
-            <input type="text" class="form-control" id="phone">
+            <input type="tel" class="form-control" id="phone">
             <label for="phone">Phone</label>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="form-floating col-12">
+            <input type="text" class="form-control" id="address">
+            <label for="address">Address</label>
         </div>
     </div>
     <div class="row text-center mt-5">

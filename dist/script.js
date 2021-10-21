@@ -58,7 +58,7 @@ $('#btn--checkCode').click(function() {
             if ( data == 'update_success' ) {
                 $.cookie('session', phone, { expires: 30, path: '/' });
                 window.location.href = '/profile/edit.php';
-            
+
             } else if ( data == 'login_successful' ) {
                 window.location.href = '/';
             }
@@ -110,3 +110,5 @@ $('#btn--updateProfile').click(function() {
         }
     });
 });
+
+$("#phone").intlTelInput({});
