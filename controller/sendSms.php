@@ -21,10 +21,19 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        $TWILIO_ACCOUNT_SID = $row[0]['value'];
-        $TWILIO_AUTH_TOKEN = $row[1]['value'];
+        switch ( $row['var'] ) {
+            case 'TWILIO_ACCOUNT_SID':
+                $TWILIO_ACCOUNT_SID = $row['value'];
+            break;
+
+            case 'TWILIO_AUTH_TOKEN':
+                $TWILIO_AUTH_TOKEN = $row['value'];
+            break;
+        }
     }
 }
+
+$conn->close();
 
 // codeActivation
 if ( $caso == 'codeActivation' ) {
