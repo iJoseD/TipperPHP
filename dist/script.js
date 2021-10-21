@@ -16,7 +16,8 @@ $(document).ready(function () {
 });
 
 $('#btn--generateCode').click(function() {
-    var phone = $('#tel--login').val();
+    var dialCode = $('.iti__selected-dial-code').html();
+    var phone = dialCode + $('#tel--login').val();
 
     $.ajax({
         url: '/controller/sendSms.php',
@@ -42,7 +43,8 @@ $('#btn--generateCode').click(function() {
 
 $('#btn--checkCode').click(function() {
     var code = $('#check--code').val();
-    var phone = $('#tel--login').val();
+    var dialCode = $('.iti__selected-dial-code').html();
+    var phone = dialCode + $('#tel--login').val();
 
     $.ajax({
         url: '/controller/checkCode.php',
@@ -125,7 +127,7 @@ window.intlTelInput(input, {
     //     callback(countryCode);
     //   });
     // },
-    hiddenInput: "full_number",
+    // hiddenInput: "full_number",
     // initialCountry: "auto",
     // localizedCountries: { 'de': 'Deutschland' },
     // nationalMode: false,
