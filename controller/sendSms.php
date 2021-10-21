@@ -94,7 +94,7 @@ if ( $caso == 'codeActivation' ) {
             echo 'error_update_db';
         }
     } else {
-        $sql = "INSERT INTO userProfile (avatar, dni, firstname, lastname, email, phone, superPower, codeActivation, status, date) VALUES ('', '', '', '', '', '$phone', '', '$code', 'pending_activation', '$date')";
+        $sql = "INSERT INTO userProfile (avatar, dni, firstname, lastname, email, phone, address, superPower, codeActivation, status, date) VALUES ('', '', '', '', '', '$phone', '', '', '$code', 'pending_activation', '$date')";
 
         if ($conn->query($sql) === TRUE) {
             // $curl = curl_init();
