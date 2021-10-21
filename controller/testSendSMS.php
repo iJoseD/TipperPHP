@@ -1,8 +1,6 @@
 <?php
 
 require_once('../aws/aws-autoloader.php');
-// require '../aws/Aws/Sns/SnsClient.php';
-// require '../aws/Aws/Exception/AwsException.php';
 
 use Aws\Sns\SnsClient;
 use Aws\Exception\AwsException;
@@ -16,10 +14,24 @@ $SnSclient = new SnsClient([
 $message = 'This message is sent from a Amazon SNS code sample.';
 $phone = '+573013808512';
 
-$result = $SnSclient->publish([
+// $result = $SnSclient->publish([
+//     'Message' => $message,
+//     'PhoneNumber' => $phone,
+// ]);
+
+$result = $client->publish([
     'Message' => $message,
+    'MessageAttributes' => [
+        'String' => [
+            'DataType' => 'String',
+            'StringValue' => 'Transactional',
+        ],
+    ],
+    'MessageStructure' => 'SMS',
     'PhoneNumber' => $phone,
 ]);
+
+var_dump($result);
 
 echo 'Hola x5';
 
