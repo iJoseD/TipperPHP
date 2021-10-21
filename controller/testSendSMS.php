@@ -19,7 +19,7 @@ $phone = '+573013808512';
 //     'PhoneNumber' => $phone,
 // ]);
 
-$result = $client->publish([
+$result = $SnSclient->publish([
     'Message' => $message,
     'MessageAttributes' => [
         'String' => [
