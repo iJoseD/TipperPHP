@@ -43,9 +43,9 @@ $dbname     = "app_tipper";
         </div>
     </div>
     <div class="row mt-4">
-        <div class="col-12">
-            <label class="form-label" for="phone">Phone</label>
-            <input type="tel" class="form-control" id="phone">
+        <div class="form-floating col-12">
+            <input type="tel" class="form-control" id="phone" readonly>
+            <label for="phone">Phone</label>
         </div>
     </div>
     <div class="row mt-4">
