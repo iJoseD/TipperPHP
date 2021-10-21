@@ -12,6 +12,7 @@ if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
 // Var
 $caso = $_POST['caso'];
 $phone = $_POST['phone'];
+$phoneSms = str_replace( '+', '%2B', $_POST['phone'] );
 $code = rand(1000, 9999);
 $date = date('Y-m-d H:m:s');
 
@@ -74,7 +75,7 @@ if ( $caso == 'codeActivation' ) {
             curl_setopt($ch, CURLOPT_URL, "https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, "From=%2B19039450637&Body=ThankYou Tipper: $code is your confirmation code. Don't reply to this message with your code.&To=$phone");
+            curl_setopt($ch, CURLOPT_POSTFIELDS, "From=%2B19039450637&Body=ThankYou Tipper: $code is your confirmation code. Don't reply to this message with your code.&To=$phoneSms");
             curl_setopt($ch, CURLOPT_USERPWD, $TWILIO_ACCOUNT_SID . ':' . $TWILIO_AUTH_TOKEN);
 
             $headers = array();
@@ -129,7 +130,7 @@ if ( $caso == 'codeActivation' ) {
             curl_setopt($ch, CURLOPT_URL, "https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, "From=%2B19039450637&Body=ThankYou Tipper: $code is your confirmation code. Don't reply to this message with your code.&To=$phone");
+            curl_setopt($ch, CURLOPT_POSTFIELDS, "From=%2B19039450637&Body=ThankYou Tipper: $code is your confirmation code. Don't reply to this message with your code.&To=$phoneSms");
             curl_setopt($ch, CURLOPT_USERPWD, $TWILIO_ACCOUNT_SID . ':' . $TWILIO_AUTH_TOKEN);
 
             $headers = array();
