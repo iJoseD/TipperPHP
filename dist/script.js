@@ -2,9 +2,11 @@ $(document).ready(function () {
     var session = $.cookie('session');
 
     if ( session == undefined ) {
+        $('body').hide();
         if ( window.location.pathname != '/login/' ) {
-            $('body').hide();
             window.location.href = '/login/';
+        } else {
+            $('body').show();
         }
     } else {
         if ( window.location.pathname == '/login/' ) {
