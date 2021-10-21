@@ -13,12 +13,19 @@ $SnSclient = new SnsClient([
 $message = 'This message is sent from a Amazon SNS code sample.';
 $phone = '+573013808512';
 
-try {
-    $result = $SnSclient->publish([
-        'Message' => $message,
-        'PhoneNumber' => $phone,
-    ]);
-    var_dump($result);
-} catch (AwsException $e) {
-    error_log($e->getMessage());
-}
+$result = $SnSclient->publish([
+    'Message' => $message,
+    'PhoneNumber' => $phone,
+]);
+
+var_dump($result);
+
+// try {
+//     $result = $SnSclient->publish([
+//         'Message' => $message,
+//         'PhoneNumber' => $phone,
+//     ]);
+//     var_dump($result);
+// } catch (AwsException $e) {
+//     error_log($e->getMessage());
+// }
