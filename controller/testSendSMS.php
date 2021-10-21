@@ -2,8 +2,8 @@
 
 require_once('../aws/aws-autoloader.php');
 
-use Aws\Sns\SnsClient;
-use Aws\Exception\AwsException;
+use \Aws\Sns\SnsClient;
+use \Aws\Exception\AwsException;
 
 $SnSclient = new SnsClient([
     'credentials' => array(
