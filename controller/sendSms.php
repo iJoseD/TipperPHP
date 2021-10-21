@@ -33,8 +33,6 @@ if ($result->num_rows > 0) {
     }
 }
 
-$conn->close();
-
 // codeActivation
 if ( $caso == 'codeActivation' ) {
     $sql = "SELECT * FROM userProfile WHERE phone = '$phone'";
