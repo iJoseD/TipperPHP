@@ -1,8 +1,11 @@
 <?php
 
 require '../aws/aws-autoloader.php';
-require '../aws/Aws/Sns/SnsClient.php';
-require '../aws/Aws/Exception/AwsException.php';
+// require '../aws/Aws/Sns/SnsClient.php';
+// require '../aws/Aws/Exception/AwsException.php';
+
+use Aws\Sns\SnsClient; 
+use Aws\Exception\AwsException;
 
 $SnSclient = new SnsClient([
     'profile' => 'default',
