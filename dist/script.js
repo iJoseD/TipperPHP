@@ -125,13 +125,13 @@ window.intlTelInput(input, {
     //     callback(countryCode);
     //   });
     // },
-    // hiddenInput: "full_number",
+    hiddenInput: "full_number",
     // initialCountry: "auto",
     // localizedCountries: { 'de': 'Deutschland' },
     // nationalMode: false,
     // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
     // placeholderNumberType: "MOBILE",
     // preferredCountries: ['cn', 'jp'],
-    // separateDialCode: true,
+    separateDialCode: true,
     utilsScript: "../dist/js/utils.js",
 });
