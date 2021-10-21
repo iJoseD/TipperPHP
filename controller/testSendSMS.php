@@ -1,6 +1,6 @@
 <?php
 
-require_once('../aws/aws-autoloader.php');
+require_once('aws/aws-autoloader.php');
 // require '../aws/Aws/Sns/SnsClient.php';
 // require '../aws/Aws/Exception/AwsException.php';
 
