@@ -13,10 +13,10 @@ $SnSclient = new SnsClient([
     'version' => '2010-03-31'
 ]);
 
-echo 'Hola x3';
+$message = 'This message is sent from a Amazon SNS code sample.';
+$phone = '+573013808512';
 
-// $message = 'This message is sent from a Amazon SNS code sample.';
-// $phone = '+573013808512';
+echo 'Hola x4 '.$message.' '.$phone;
 
 // $result = $SnSclient->publish([
 //     'Message' => $message,
