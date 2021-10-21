@@ -6,6 +6,10 @@ use Aws\Sns\SnsClient;
 use Aws\Exception\AwsException;
 
 $SnSclient = new SnsClient([
+    'credentials' => array(
+        'key' => 'AKIAVLH2HXALM36ADNHM',
+        'secret' => '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',
+    ),
     'profile' => 'default',
     'region' => 'us-east-1',
     'version' => '2010-03-31'
