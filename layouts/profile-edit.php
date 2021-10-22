@@ -97,7 +97,7 @@ $dbname     = "app_tipper";
     <div class="row mt-5 hide" id="alert">
         <div class="col-12">
             <div class="alert alert-success" role="alert">
-                Profile created successfully!
+                Profile created successfully! Please wait...
             </div>
         </div>
     </div>

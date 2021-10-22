@@ -107,6 +107,9 @@ $('#btn--updateProfile').click(function() {
 
             if ( data == 'update_success' ) {
                 $('#alert').removeClass('hide');
+                window.setTimeout(function() {
+                    window.location.href = '/';
+                }, 2000);
             }
         },
         error: function() {
