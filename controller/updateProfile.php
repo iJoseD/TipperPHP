@@ -21,7 +21,7 @@ $superPower = $_POST['superPower'];
 
 // updateProfile
 if ( $caso == 'updateProfile' ) {
-    $sql = "UPDATE userProfile SET dni = '$dni', firstname = '$firstName', lastname = '$lastName', email = '$email', addres = '$address', superPower = '$superPower', status = 'profile_created' WHERE phone = '$phone'";
+    $sql = "UPDATE userProfile SET dni = '$dni', firstname = '$firstName', lastname = '$lastName', email = '$email', address = '$address', superPower = '$superPower', status = 'profile_created' WHERE phone = '$phone'";
 
     if ($conn->query($sql) === TRUE) {
         echo 'update_success';
