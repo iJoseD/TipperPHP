@@ -41,23 +41,23 @@ if ($result->num_rows > 0) {
     </div>
     <div class="row mt-4">
         <div class="form-floating col-12">
-            <input type="text" class="form-control" id="dni" value="<?php echo $phone; ?>">
+            <input type="text" class="form-control" id="dni" value="<?php echo $dni; ?>">
             <label for="dni">DNI</label>
         </div>
     </div>
     <div class="row mt-4">
         <div class="form-floating col-6">
-            <input type="text" class="form-control" id="fitst--name" value="<?php echo $phone; ?>">
+            <input type="text" class="form-control" id="fitst--name" value="<?php echo $firstname; ?>">
             <label for="fitst--name">First Name</label>
         </div>
         <div class="form-floating col-6">
-            <input type="text" class="form-control" id="last--name" value="<?php echo $phone; ?>">
+            <input type="text" class="form-control" id="last--name" value="<?php echo $lastname; ?>">
             <label for="last--name">Last Name</label>
         </div>
     </div>
     <div class="row mt-4">
         <div class="form-floating col-12">
-            <input type="text" class="form-control" id="email" value="<?php echo $phone; ?>">
+            <input type="text" class="form-control" id="email" value="<?php echo $email; ?>">
             <label for="email">Email</label>
         </div>
     </div>
@@ -69,7 +69,7 @@ if ($result->num_rows > 0) {
     </div>
     <div class="row mt-4">
         <div class="form-floating col-12">
-            <input type="text" class="form-control" id="address" value="<?php echo $phone; ?>">
+            <input type="text" class="form-control" id="address" value="<?php echo $address; ?>">
             <label for="address">Address</label>
         </div>
     </div>
