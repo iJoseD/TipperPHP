@@ -27,4 +27,15 @@
         </div>
         <div class="col-1"></div>
     </div>
+
+    <div class="row mt-5">
+        <div class="col-12">
+            <h2>Balance of the last 7 days</h2>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12">
+            <canvas id="balanceDashboard" width="100%"></canvas>
+        </div>
+    </div>
 </section>
