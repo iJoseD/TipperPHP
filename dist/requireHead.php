@@ -1,7 +1,7 @@
 <?php session_start();
 
 if ( isset( $_SESSION['phone'] ) ) {
-    if ( $_SERVER['REQUEST_URI'] != '/login/index.php' ) {
+    if ( $_SERVER['REQUEST_URI'] == '/login/index.php' ) {
         header( 'location: index.php' );
     }
 } else {
