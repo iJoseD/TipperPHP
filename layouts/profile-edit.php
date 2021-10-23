@@ -18,10 +18,10 @@
         <div class="col-12">
             <form method="post" action="#" enctype="multipart/form-data">
                 <div class="card">
-                    <img class="card-img-top" src="dist/img/user.png">
+                    <img class="card-img-top" src="../dist/img/user.png">
                     <div class="card-body d-grid">
                         <input type="file" class="form-control-file" name="img--profile" id="img--profile">
-                        <input type="button" class="btn btn-primary upload mt3-3" value="Upload">
+                        <input type="button" class="btn btn-primary upload mt-3" value="Upload">
                     </div>
                 </div>
             </form>
