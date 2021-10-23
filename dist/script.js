@@ -1,4 +1,43 @@
-$(document).ready(function () {});
+$(document).ready(function () {
+    // Balance of the last 7 days
+    window.setTimeout(function() {
+        var ctx = document.getElementById('balanceDashboard');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: 'Income',
+                    data: [25, 30, 13, 18, 21, 11, 43],
+                    backgroundColor: [
+                        'rgba(18, 43, 252, 0.2)',
+                        'rgba(29, 171, 149, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(18, 43, 252, 1)',
+                        'rgba(29, 171, 149, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }, 2000);
+});
 
 $('#btn--generateCode').click(function() {
     var dialCode = $('.iti__selected-dial-code').html();
@@ -151,42 +190,3 @@ window.intlTelInput(phoneLogin, {
     separateDialCode: true,
     utilsScript: "../dist/js/utils.js",
 });
-
-// Balance of the last 7 days
-window.setTimeout(function() {
-    var ctx = document.getElementById('balanceDashboard');
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-                label: 'Income',
-                data: [25, 30, 13, 18, 21, 11, 43],
-                backgroundColor: [
-                    'rgba(18, 43, 252, 0.2)',
-                    'rgba(29, 171, 149, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(18, 43, 252, 1)',
-                    'rgba(29, 171, 149, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-}, 1000);
