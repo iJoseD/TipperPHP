@@ -6,31 +6,6 @@
     $phone      = $_SESSION['phone'];
     $address    = $_SESSION['address'];
     $superPower = $_SESSION['superPower'];
-
-    switch ( $superPower ) {
-        case 'Artist':
-            $active = 'active';
-        break;
-        case 'Creator':
-            $active = 'active';
-        break;
-        case 'Server':
-            $active = 'active';
-        break;
-        case 'Tour-guide':
-            $active = 'active';
-        break;
-        case 'Influencer':
-            $active = 'active';
-        break;
-        case 'Speaker':
-            $active = 'active';
-        break;
-        
-        default:
-            $active = '';
-        break;
-    }
 ?>
 
 <section class="container">
@@ -39,10 +14,23 @@
             <h2 class="text--blue">Create your profile</h2>
         </div>
     </div>
-    <div class="row mt-5 hide">
+    <div class="row mt-5">
         <div class="col-12">
-            <label for="img--profile" class="form-label">Select your profile picture</label>
-            <input class="form-control" type="file" id="img--profile">
+            <form method="post" action="#" enctype="multipart/form-data">
+                <div class="card">
+                    <img class="card-img-top" src="dist/img/user.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Upload a picture</h5>
+                        <div class="form-group">
+                            <!-- <label for="image">Nueva imagen</label> -->
+                            <input type="file" class="form-control-file" name="img--profile" id="img--profile">
+                        </div>
+                        <input type="button" class="btn btn-primary upload d-grid" value="Upload">
+                    </div>
+                </div>
+            </form>
+            <!-- <label for="img--profile" class="form-label">Select your profile picture</label>
+            <input class="form-control" type="file" id="img--profile"> -->
         </div>
     </div>
     <div class="row mt-4">
@@ -86,24 +74,24 @@
     </div>
     <div class="row mt-4">
         <div class="col-4 d-grid">
-            <span class="super-power artist <?php echo $active; ?>" data-superPower="Artist">Artist</span>
+            <span class="super-power artist" data-superPower="Artist">Artist</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power creator <?php echo $active; ?>" data-superPower="Creator">Creator</span>
+            <span class="super-power creator" data-superPower="Creator">Creator</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power server <?php echo $active; ?>" data-superPower="Server">Server</span>
+            <span class="super-power server" data-superPower="Server">Server</span>
         </div>
     </div>
     <div class="row mt-4">
         <div class="col-4 d-grid">
-            <span class="super-power tour-guide <?php echo $active; ?>" data-superPower="Tour-guide">Tour-guide</span>
+            <span class="super-power tour-guide" data-superPower="Tour-guide">Tour-guide</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power influencer <?php echo $active; ?>" data-superPower="Influencer">Influencer</span>
+            <span class="super-power influencer" data-superPower="Influencer">Influencer</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power speaker <?php echo $active; ?>" data-superPower="Speaker">Speaker</span>
+            <span class="super-power speaker" data-superPower="Speaker">Speaker</span>
         </div>
     </div>
     <div class="row hide">
