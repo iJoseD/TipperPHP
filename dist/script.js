@@ -82,7 +82,15 @@ $(".upload").on('click', function() {
         contentType: false,
         processData: false,
         success: function(response) {
-            console.log( response );
+            if ( response == 'error_al_mover_archivo' ) {
+                console.log( response );
+            } else if ( response == 'error_formato_imagen' ) {
+                console.log( response );
+            } else if ( response == 'error_array_files' ) {
+                console.log( response );
+            } else {
+                $(".card-img-top").attr("src", response);
+            }
         }
     });
     return false;
