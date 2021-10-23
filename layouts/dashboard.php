@@ -10,8 +10,9 @@
 ?>
 
 <section class="container">
-    <div class="row">
-        <div class="card col-12">
+    <div class="row mt-5">
+        <div class="col-1"></div>
+        <div class="card col-10">
             <div class="row">
                 <div class="col-4">
                     <img src="<?php echo $avatar; ?>" class="img-fluid rounded-start" alt="Profile Avatar">
@@ -24,5 +25,6 @@
                 </div>
             </div>
         </div>
+        <div class="col-1"></div>
     </div>
 </section>
