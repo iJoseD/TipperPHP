@@ -1,19 +1,4 @@
-$(document).ready(function () {
-    // var session = $.cookie('session');
-
-    // if ( session == undefined ) {
-    //     $('body').hide();
-    //     if ( window.location.pathname != '/login/' ) {
-    //         window.location.href = '/login/';
-    //     } else {
-    //         $('body').show();
-    //     }
-    // } else {
-    //     if ( window.location.pathname == '/login/' ) {
-    //         window.location.href = '/';
-    //     }
-    // }
-});
+$(document).ready(function () {});
 
 $('#btn--generateCode').click(function() {
     var dialCode = $('.iti__selected-dial-code').html();
@@ -58,7 +43,6 @@ $('#btn--checkCode').click(function() {
             console.log( data );
 
             if ( data == 'update_success' ) {
-                $.cookie('session', phone, { expires: 30, path: '/' });
                 window.location.href = '/profile/edit.php';
 
             } else if ( data == 'login_successful' ) {
