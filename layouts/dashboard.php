@@ -1,4 +1,5 @@
 <?php session_start();
+    if ( empty( $_SESSION['avatar'] ) ) { $avatar = '../dist/img/user.png'; } else { $avatar = $_SESSION['avatar']; }
     $dni        = $_SESSION['dni'];
     $firstName  = $_SESSION['firstName'];
     $lastName   = $_SESSION['lastName'];
@@ -13,7 +14,7 @@
         <div class="card col-12">
             <div class="row">
                 <div class="col-4">
-                    <img src="https://thankyoutipper.com/wp-content/uploads/2021/09/240410371_546518386495802_3184932399260879223_n.jpg" class="img-fluid rounded-start" alt="Profile Avatar">
+                    <img src="<?php echo $avatar; ?>" class="img-fluid rounded-start" alt="Profile Avatar">
                 </div>
                 <div class="col-8">
                     <div class="card-body">
