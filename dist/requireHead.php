@@ -3,7 +3,7 @@
 if ( isset( $_SESSION['phone'] ) ) {
     header( 'location: index.php' );
 } else {
-    header( 'location: login/index.php' );
+    header( 'location: ../login/index.php' );
 }
 
 ?>
