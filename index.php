@@ -4,6 +4,9 @@
     <?php require_once('dist/requireHead.php'); ?>
 
     <body>
+        <!-- Navbar -->
+        <?php require_once('../layouts/navbar.php'); ?>
+        
         <!-- Dashboard -->
         <?php require_once('layouts/dashboard.php'); ?>
         

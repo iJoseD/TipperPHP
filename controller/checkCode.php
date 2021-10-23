@@ -25,11 +25,17 @@ if ( $caso == 'checkCode' ) {
                     $sql = "UPDATE userProfile SET status = 'incomplete_profile' WHERE phone = '$phone'";
 
                     if ($conn->query($sql) === TRUE) {
+                        session_start();
+                        $_SESSION['phone'] = $phone;
+
                         echo 'update_success';
                     } else {
                         echo 'error_update_db';
                     }
                 } else {
+                    session_start();
+                    $_SESSION['phone'] = $phone;
+                    
                     echo 'login_successful';
                 }
             } else {

@@ -1,10 +1,19 @@
-<?php
+<?php session_start();
+
+$phone = $_SESSION['phone'];
 
 // MySQLi
 $servername = "localhost";
 $username   = "app_tipper_user";
 $password   = "Ma3h!h57";
 $dbname     = "app_tipper";
+
+$sql = "SELECT * FROM userProfile WHERE phone = '$phone'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {}
+}
 
 ?>
 
@@ -44,7 +53,7 @@ $dbname     = "app_tipper";
     </div>
     <div class="row mt-4">
         <div class="form-floating col-12">
-            <input type="tel" class="form-control" id="phone" readonly>
+            <input type="tel" class="form-control" id="phone" value="<?php echo $phone; ?>" readonly>
             <label for="phone">Phone</label>
         </div>
     </div>
