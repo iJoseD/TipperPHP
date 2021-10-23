@@ -26,6 +26,10 @@
         case 'Speaker':
             $active = 'active';
         break;
+        
+        default:
+            $active = '';
+        break;
     }
 ?>
 
