@@ -1,3 +1,13 @@
+<?php session_start();
+
+if ( isset( $_SESSION['phone'] ) ) {
+    header( 'location: index.php' );
+} else {
+    header( 'location: login/index.php' );
+}
+
+?>
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
