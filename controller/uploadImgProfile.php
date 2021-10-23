@@ -16,17 +16,15 @@ if (is_array($_FILES) && count($_FILES) > 0) {
         || ($_FILES["file"]["type"] == "image/jpeg")
         || ($_FILES["file"]["type"] == "image/png")
         || ($_FILES["file"]["type"] == "image/gif")) {
-        $avatar = "../dist/img-profile/".$_FILES['file']['name'];
-        echo $avatar;
-        // if ( move_uploaded_file( $_FILES["file"]["tmp_name"], "../dist/img-profile/".$_FILES['file']['name'] ) ) {
-        //     $avatar = "../dist/img-profile/".$_FILES['file']['name'];
-        //     $sql = "UPDATE userProfile SET avatar = '$avatar' WHERE phone = '$phone'";
-        //     $_SESSION['avatar'] = $avatar;
+        if ( move_uploaded_file( $_FILES["file"]["tmp_name"], 'https://myapp.thankyoutipper.com/dist/img-profile/'.$_FILES['file']['name'] ) ) {
+            $avatar = '/dist/img-profile/'.$_FILES['file']['name'];
+            $sql = "UPDATE userProfile SET avatar = '$avatar' WHERE phone = '$phone'";
+            $_SESSION['avatar'] = $avatar;
             
-        //     echo $avatar;
-        // } else {
-        //     echo "error_al_mover_archivo";
-        // }
+            echo $avatar;
+        } else {
+            echo "error_al_mover_archivo";
+        }
     } else {
         echo "error_formato_imagen";
     }
