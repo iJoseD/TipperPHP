@@ -1,30 +1,27 @@
-<?php session_start();
+<?php session_start(); $phone = $_SESSION['phone'];
 
-$phone = $_SESSION['phone'];
+    // MySQLi
+    $servername = "localhost";
+    $username   = "app_tipper_user";
+    $password   = "Ma3h!h57";
+    $dbname     = "app_tipper";
 
-// MySQLi
-$servername = "localhost";
-$username   = "app_tipper_user";
-$password   = "Ma3h!h57";
-$dbname     = "app_tipper";
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
+    $sql = "SELECT * FROM userProfile WHERE phone = '$phone'";
+    $result = $conn->query($sql);
 
-$sql = "SELECT * FROM userProfile WHERE phone = '$phone'";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-        $dni = $row['dni'];
-        $firstname = $row['firstname'];
-        $lastname = $row['lastname'];
-        $email = $row['email'];
-        $address = $row['address'];
-        $superPower = $row['superPower'];
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            $dni = $row['dni'];
+            $firstname = $row['firstname'];
+            $lastname = $row['lastname'];
+            $email = $row['email'];
+            $address = $row['address'];
+            $superPower = $row['superPower'];
+        }
     }
-}
-
 ?>
 
 <section class="container">
