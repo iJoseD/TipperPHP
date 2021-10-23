@@ -8,11 +8,21 @@ $username   = "app_tipper_user";
 $password   = "Ma3h!h57";
 $dbname     = "app_tipper";
 
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
+
 $sql = "SELECT * FROM userProfile WHERE phone = '$phone'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {}
+    while($row = $result->fetch_assoc()) {
+        $dni = $row['dni'];
+        $firstname = $row['firstname'];
+        $lastname = $row['lastname'];
+        $email = $row['email'];
+        $address = $row['address'];
+        $superPower = $row['superPower'];
+    }
 }
 
 ?>
@@ -31,23 +41,23 @@ if ($result->num_rows > 0) {
     </div>
     <div class="row mt-4">
         <div class="form-floating col-12">
-            <input type="text" class="form-control" id="dni">
+            <input type="text" class="form-control" id="dni" value="<?php echo $phone; ?>">
             <label for="dni">DNI</label>
         </div>
     </div>
     <div class="row mt-4">
         <div class="form-floating col-6">
-            <input type="text" class="form-control" id="fitst--name">
+            <input type="text" class="form-control" id="fitst--name" value="<?php echo $phone; ?>">
             <label for="fitst--name">First Name</label>
         </div>
         <div class="form-floating col-6">
-            <input type="text" class="form-control" id="last--name">
+            <input type="text" class="form-control" id="last--name" value="<?php echo $phone; ?>">
             <label for="last--name">Last Name</label>
         </div>
     </div>
     <div class="row mt-4">
         <div class="form-floating col-12">
-            <input type="text" class="form-control" id="email">
+            <input type="text" class="form-control" id="email" value="<?php echo $phone; ?>">
             <label for="email">Email</label>
         </div>
     </div>
@@ -59,7 +69,7 @@ if ($result->num_rows > 0) {
     </div>
     <div class="row mt-4">
         <div class="form-floating col-12">
-            <input type="text" class="form-control" id="address">
+            <input type="text" class="form-control" id="address" value="<?php echo $phone; ?>">
             <label for="address">Address</label>
         </div>
     </div>

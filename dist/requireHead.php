@@ -1,15 +1,13 @@
 <?php session_start();
-
-if ( empty( $_SESSION['phone'] ) ) {
-    if ( $_SERVER['REQUEST_URI'] != '/login/' ) {
-        header( 'location: ../login/' );
+    if ( empty( $_SESSION['phone'] ) ) {
+        if ( $_SERVER['REQUEST_URI'] != '/login/' ) {
+            header( 'location: ../login/' );
+        }
+    } else {
+        if ( $_SERVER['REQUEST_URI'] == '/login/' ) {
+            header( 'location: /' );
+        }
     }
-} else {
-    if ( $_SERVER['REQUEST_URI'] == '/login/' ) {
-        header( 'location: /' );
-    }
-}
-
 ?>
 
 <head>
