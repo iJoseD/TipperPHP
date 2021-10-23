@@ -3,7 +3,7 @@
     <!-- Head -->
     <?php require_once('dist/requireHead.php'); ?>
 
-    <body>
+    <body id="dashboard">
         <!-- Navbar -->
         <?php require_once('layouts/navbar.php'); ?>
         
