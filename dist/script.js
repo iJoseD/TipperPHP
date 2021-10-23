@@ -1,18 +1,18 @@
 $(document).ready(function () {
-    var session = $.cookie('session');
+    // var session = $.cookie('session');
 
-    if ( session == undefined ) {
-        $('body').hide();
-        if ( window.location.pathname != '/login/' ) {
-            window.location.href = '/login/';
-        } else {
-            $('body').show();
-        }
-    } else {
-        if ( window.location.pathname == '/login/' ) {
-            window.location.href = '/';
-        }
-    }
+    // if ( session == undefined ) {
+    //     $('body').hide();
+    //     if ( window.location.pathname != '/login/' ) {
+    //         window.location.href = '/login/';
+    //     } else {
+    //         $('body').show();
+    //     }
+    // } else {
+    //     if ( window.location.pathname == '/login/' ) {
+    //         window.location.href = '/';
+    //     }
+    // }
 });
 
 $('#btn--generateCode').click(function() {
