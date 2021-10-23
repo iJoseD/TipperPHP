@@ -20,15 +20,16 @@ if (is_array($_FILES) && count($_FILES) > 0) {
             $avatar = "../dist/img-profile/".$_FILES['file']['name'];
             $sql = "UPDATE userProfile SET avatar = '$avatar' WHERE phone = '$phone'";
             $_SESSION['avatar'] = $avatar;
+            
             echo $avatar;
         } else {
-            echo 0;
+            echo "error_al_mover_archivo";
         }
     } else {
-        echo 0;
+        echo "error_formato_imagen";
     }
 } else {
-    echo 0;
+    echo "error_array_files";
 }
 
 $conn->close();

@@ -82,10 +82,10 @@ $(".upload").on('click', function() {
         contentType: false,
         processData: false,
         success: function(response) {
-            if (response != 0) {
+            if ( response != 'error_al_mover_archivo' || response != 'error_formato_imagen' || response != 'error_array_files' ) {
                 $(".card-img-top").attr("src", response);
             } else {
-                alert('Formato de imagen incorrecto.');
+                alert(response);
             }
         }
     });
