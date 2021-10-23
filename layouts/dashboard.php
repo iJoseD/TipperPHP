@@ -39,25 +39,20 @@
         </div>
     </div>
 
-    <div class="row mt-5">
-        <div class="col-12">
-            <h2>Balance of the last 7 days</h2>
-        </div>
-    </div>
-    <div class="row mt-4">
-        <div class="card col-4">
+    <div class="options row mt-5">
+        <div class="card col-4 text-center">
             <img src="/dist/img/icoUser.png" alt="icoUser">
             <div class="card-body">
                 <h5 class="card-title">Account</h5>
             </div>
         </div>
-        <div class="card col-4">
+        <div class="card col-4 text-center">
             <img src="/dist/img/icoHistory.png" alt="icoHistory">
             <div class="card-body">
                 <h5 class="card-title">Historial</h5>
             </div>
         </div>
-        <div class="card col-4">
+        <div class="card col-4 text-center">
             <img src="/dist/img/icoQr.png" alt="icoQr">
             <div class="card-body">
                 <h5 class="card-title">My QR</h5>
