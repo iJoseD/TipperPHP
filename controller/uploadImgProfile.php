@@ -17,12 +17,15 @@ if (is_array($_FILES) && count($_FILES) > 0) {
         || ($_FILES["file"]["type"] == "image/jpeg")
         || ($_FILES["file"]["type"] == "image/png")
         || ($_FILES["file"]["type"] == "image/gif")) {
-        if ( move_uploaded_file( $_FILES["file"]["tmp_name"], $_SERVER['DOCUMENT_ROOT']."/dist/img-profile/".$code."-".$_FILES['file']['name'] ) ) {
-            $avatar = $_SERVER['DOCUMENT_ROOT']."/dist/img-profile/".$code."-".$_FILES['file']['name'];
+        if ( move_uploaded_file( $_FILES["file"]["tmp_name"], "/dist/img-profile/".$code."-".$_FILES['file']['name'] ) ) {
+            $avatar = "/dist/img-profile/".$code."-".$_FILES['file']['name'];
             $sql = "UPDATE userProfile SET avatar = '$avatar' WHERE phone = '$phone'";
-            $_SESSION['avatar'] = $avatar;
-            
-            echo $avatar;
+            if ($conn->query($sql) === TRUE) {
+                $_SESSION['avatar'] = $avatar;
+                echo $avatar;
+            } else {
+                echo 'error_update_db';
+            }
         } else {
             echo "error_al_mover_archivo";
         }
