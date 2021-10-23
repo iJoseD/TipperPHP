@@ -1,9 +1,13 @@
 <?php session_start();
 
 if ( isset( $_SESSION['phone'] ) ) {
-    header( 'location: index.php' );
+    if ( $_SERVER['REQUEST_URI'] != '/login/index.php' ) {
+        header( 'location: index.php' );
+    }
 } else {
-    header( 'location: ../login/index.php' );
+    if ( $_SERVER['REQUEST_URI'] != '/login/index.php' ) {
+        header( 'location: ../login/index.php' );
+    }
 }
 
 ?>
