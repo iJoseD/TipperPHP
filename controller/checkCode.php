@@ -33,6 +33,19 @@ if ( $caso == 'checkCode' ) {
                     }
                 } else {
                     $_SESSION['phone'] = $phone;
+                    $sql = "SELECT * FROM userProfile WHERE phone = '$phone'";
+                    $result = $conn->query($sql);
+                    
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            $_SESSION['dni']        = $row['dni'];
+                            $_SESSION['firstName']  = $row['firstname'];
+                            $_SESSION['lastName']   = $row['lastname'];
+                            $_SESSION['email']      = $row['email'];;
+                            $_SESSION['address']    = $row['address'];;
+                            $_SESSION['superPower'] = $row['superPower'];;
+                        }
+                    }
                     
                     echo 'login_successful';
                 }
