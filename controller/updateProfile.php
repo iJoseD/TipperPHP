@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 
 // MySQLi
 $servername = "localhost";
@@ -25,6 +25,13 @@ if ( $caso == 'updateProfile' ) {
 
     if ($conn->query($sql) === TRUE) {
         echo 'update_success';
+
+        $_SESSION['dni']        = $dni;
+        $_SESSION['firstName']  = $firstName;
+        $_SESSION['lastName']   = $lastName;
+        $_SESSION['email']      = $email;
+        $_SESSION['address']    = $address;
+        $_SESSION['superPower'] = $superPower;
     } else {
         echo 'error_update_db';
     }

@@ -10,11 +10,11 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
 
 // Var
-$caso = $_POST['caso'];
-$phone = $_POST['phone'];
-$phoneSms = str_replace( '+', '%2B', $_POST['phone'] );
-$code = rand(1000, 9999);
-$date = date('Y-m-d H:m:s');
+$caso       = $_POST['caso'];
+$phone      = $_POST['phone'];
+$phoneSms   = str_replace( '+', '%2B', $_POST['phone'] );
+$code       = rand(1000, 9999);
+$date       = date('Y-m-d H:m:s');
 
 // twilloAuthentication
 $sql = "SELECT * FROM twilloAuthentication";

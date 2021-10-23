@@ -1,26 +1,31 @@
-<?php session_start(); $phone = $_SESSION['phone'];
+<?php session_start();
+    $dni        = $_SESSION['dni'];
+    $firstName  = $_SESSION['firstName'];
+    $lastName   = $_SESSION['lastName'];
+    $email      = $_SESSION['email'];
+    $phone      = $_SESSION['phone'];
+    $address    = $_SESSION['address'];
+    $superPower = $_SESSION['superPower'];
 
-    // MySQLi
-    $servername = "localhost";
-    $username   = "app_tipper_user";
-    $password   = "Ma3h!h57";
-    $dbname     = "app_tipper";
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
-
-    $sql = "SELECT * FROM userProfile WHERE phone = '$phone'";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            $dni = $row['dni'];
-            $firstname = $row['firstname'];
-            $lastname = $row['lastname'];
-            $email = $row['email'];
-            $address = $row['address'];
-            $superPower = $row['superPower'];
-        }
+    switch ( $superPower ) {
+        case 'Artist':
+            $active = 'active';
+        break;
+        case 'Creator':
+            $active = 'active';
+        break;
+        case 'Server':
+            $active = 'active';
+        break;
+        case 'Tour-guide':
+            $active = 'active';
+        break;
+        case 'Influencer':
+            $active = 'active';
+        break;
+        case 'Speaker':
+            $active = 'active';
+        break;
     }
 ?>
 
@@ -44,11 +49,11 @@
     </div>
     <div class="row mt-4">
         <div class="form-floating col-6">
-            <input type="text" class="form-control" id="fitst--name" value="<?php echo $firstname; ?>">
+            <input type="text" class="form-control" id="fitst--name" value="<?php echo $firstName; ?>">
             <label for="fitst--name">First Name</label>
         </div>
         <div class="form-floating col-6">
-            <input type="text" class="form-control" id="last--name" value="<?php echo $lastname; ?>">
+            <input type="text" class="form-control" id="last--name" value="<?php echo $lastName; ?>">
             <label for="last--name">Last Name</label>
         </div>
     </div>
@@ -77,24 +82,24 @@
     </div>
     <div class="row mt-4">
         <div class="col-4 d-grid">
-            <span class="super-power artist" data-superPower="Artist">Artist</span>
+            <span class="super-power artist <?php echo $active; ?>" data-superPower="Artist">Artist</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power creator" data-superPower="Creator">Creator</span>
+            <span class="super-power creator <?php echo $active; ?>" data-superPower="Creator">Creator</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power server" data-superPower="Server">Server</span>
+            <span class="super-power server <?php echo $active; ?>" data-superPower="Server">Server</span>
         </div>
     </div>
     <div class="row mt-4">
         <div class="col-4 d-grid">
-            <span class="super-power tour-guide" data-superPower="Tour-guide">Tour-guide</span>
+            <span class="super-power tour-guide <?php echo $active; ?>" data-superPower="Tour-guide">Tour-guide</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power influencer" data-superPower="Influencer">Influencer</span>
+            <span class="super-power influencer <?php echo $active; ?>" data-superPower="Influencer">Influencer</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power speaker" data-superPower="Speaker">Speaker</span>
+            <span class="super-power speaker <?php echo $active; ?>" data-superPower="Speaker">Speaker</span>
         </div>
     </div>
     <div class="row hide">
