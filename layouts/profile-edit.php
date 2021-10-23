@@ -19,18 +19,12 @@
             <form method="post" action="#" enctype="multipart/form-data">
                 <div class="card">
                     <img class="card-img-top" src="dist/img/user.png">
-                    <div class="card-body">
-                        <h5 class="card-title">Upload a picture</h5>
-                        <div class="form-group">
-                            <!-- <label for="image">Nueva imagen</label> -->
-                            <input type="file" class="form-control-file" name="img--profile" id="img--profile">
-                        </div>
-                        <input type="button" class="btn btn-primary upload d-grid" value="Upload">
+                    <div class="card-body d-grid">
+                        <input type="file" class="form-control-file" name="img--profile" id="img--profile">
+                        <input type="button" class="btn btn-primary upload mt3-3" value="Upload">
                     </div>
                 </div>
             </form>
-            <!-- <label for="img--profile" class="form-label">Select your profile picture</label>
-            <input class="form-control" type="file" id="img--profile"> -->
         </div>
     </div>
     <div class="row mt-4">

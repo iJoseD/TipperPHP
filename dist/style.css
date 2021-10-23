@@ -66,3 +66,7 @@ span.super-power {
 span.super-power.active {
   background-color: #ff3127;
 }
+
+img.card-img-top {
+  padding: 3em;
+}
