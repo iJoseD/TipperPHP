@@ -15,7 +15,7 @@
             <h2 class="text--blue">Create your profile</h2>
         </div>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-3">
         <div class="col-12">
             <form method="post" action="#" enctype="multipart/form-data">
                 <div class="card">

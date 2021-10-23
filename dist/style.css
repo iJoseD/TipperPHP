@@ -69,5 +69,9 @@ span.super-power.active {
 
 img.card-img-top {
   padding: 1em;
-  border-radius: 3em;
+  border-radius: 2em;
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
 }
