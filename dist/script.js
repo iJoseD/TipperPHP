@@ -154,7 +154,7 @@ window.intlTelInput(phoneLogin, {
 
 // Balance of the last 7 days
 var ctx = document.getElementById('balanceDashboard');
-var balanceDashboard = new Chart(ctx, {
+var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
