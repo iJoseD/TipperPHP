@@ -108,6 +108,6 @@ span.thanks {
   background: #ff3127;
   color: #fff;
   font-weight: 800;
-  padding: 10px 25px;
-  border-radius: 15px;
+  padding: 10px 6em;
+  border-radius: 0px 0px 10px 10px;
 }
