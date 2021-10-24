@@ -66,3 +66,56 @@
         </div>
     </div>
 </section>
+
+<script>
+    $(document).ready(function () {
+        // Balance of the last 7 days
+        window.setTimeout(function() {
+            var ctx = document.getElementById('balanceDashboard');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: [
+                        <?php
+                            $f = date("M d");
+                            for( $i = 6; $i > 0; $i-- ) {
+                                echo "'".date("M d", strtotime("$f   -$i day"))."', ";
+                            }
+                            echo "'".$f."'";
+                        ?>
+                    ],
+                    datasets: [{
+                        label: 'Income',
+                        data: [25, 30, 13, 18, 21, 11, 43],
+                        backgroundColor: [
+                            'rgba(18, 43, 252, 0.2)',
+                            'rgba(29, 171, 149, 0.2)',
+                            'rgba(247, 211, 79, 0.2)',
+                            'rgba(247, 67, 67, 0.2)',
+                            'rgba(42, 168, 247, 0.2)',
+                            'rgba(176, 224, 29, 0.2)',
+                            'rgba(196, 122, 51, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(18, 43, 252, 1)',
+                            'rgba(29, 171, 149, 1)',
+                            'rgba(247, 211, 79, 1)',
+                            'rgba(247, 67, 67, 1)',
+                            'rgba(42, 168, 247, 1)',
+                            'rgba(176, 224, 29, 1)',
+                            'rgba(196, 122, 51, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }, 1500);
+    });
+</script>
