@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-8">
                     <div class="card-body">
-                        <h5 class="card-title">Good day, <?php echo $firstName; ?>!</h5>
+                        <h5 class="card-title text--blue">Good day, <?php echo $firstName; ?>!</h5>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
 
     <div class="row mt-5">
         <div class="col-12">
-            <h2>Balance of the last 7 days</h2>
+            <h2 class="text--blue">Balance of the last 7 days</h2>
         </div>
     </div>
     <div class="row mt-3">
@@ -44,21 +44,25 @@
             <a href="http://">
                 <img src="/dist/img/icoUser.png" alt="icoUser">
                 <div class="card-body">
-                    <h5 class="card-title">Account</h5>
+                    <h5 class="card-title text--blue">Account</h5>
                 </div>
             </a>
         </div>
         <div class="card col-4 text-center">
-            <img src="/dist/img/icoHistory.png" alt="icoHistory">
-            <div class="card-body">
-                <h5 class="card-title">Historial</h5>
-            </div>
+            <a href="http://">
+                <img src="/dist/img/icoHistory.png" alt="icoHistory">
+                <div class="card-body">
+                    <h5 class="card-title text--blue">Historial</h5>
+                </div>
+            </a>
         </div>
         <div class="card col-4 text-center">
-            <img src="/dist/img/icoQr.png" alt="icoQr">
-            <div class="card-body">
-                <h5 class="card-title">My QR</h5>
-            </div>
+            <a href="http://">
+                <img src="/dist/img/icoQr.png" alt="icoQr">
+                <div class="card-body">
+                    <h5 class="card-title text--blue">My QR</h5>
+                </div>
+            </a>
         </div>
     </div>
 </section>

@@ -86,6 +86,10 @@ body#dashboard .options .card {
 }
 
 body#dashboard .options .card img {
-  width: 60%;
+  width: 45%;
   margin: 0 auto;
+}
+
+body#dashboard .options .card a {
+  text-decoration: none;
 }
