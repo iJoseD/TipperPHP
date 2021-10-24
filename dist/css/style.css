@@ -103,3 +103,11 @@ span.superPower {
   padding: 10px 25px;
   border-radius: 15px 15px 0px 0px;
 }
+
+span.thanks {
+  background: #ff3127;
+  color: #fff;
+  font-weight: 800;
+  padding: 10px 25px;
+  border-radius: 15px;
+}

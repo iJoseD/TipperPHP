@@ -23,11 +23,14 @@
         <div class="card col-10">
             <div class="card-body text-center">
                 <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://myapp.thankyoutipper.com/payments/?id=<?php echo $_SESSION['phone']; ?>&choe=UTF-8" alt="Generate QR Code">
-                <h5 class="card-title text--orange" style="font-weight: 800;"><?php echo $_SESSION['firstName']; ?></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h2 class="card-title text--orange" style="font-weight: 800;"><?php echo $_SESSION['firstName']; ?></h2>
             </div>
         </div>
         <div class="col-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            <span class="thanks">Thanks!</span>
+        </div>
     </div>
 </section>
