@@ -94,3 +94,12 @@ body#dashboard .options .card img {
 body#dashboard .options .card a {
   text-decoration: none;
 }
+
+span.superPower {
+  background: #ff3127;
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 15px 15px 0px 0px;
+}
