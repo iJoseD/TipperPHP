@@ -3,7 +3,7 @@
 <section class="container">
     <div class="row mt-5">
         <div class="col-12 text-center">
-            <img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newLogo-W.svg" width="60%" alt="Logo ThankYou Tipper">
+            <a href="/"><img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newLogo-W.svg" width="60%" alt="Logo ThankYou Tipper"></a>
         </div>
     </div>
 

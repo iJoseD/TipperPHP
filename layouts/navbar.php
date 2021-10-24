@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newLogo.svg" alt="Logo ThankYou Tipper" style="width: 30%;">
+        <a href="/"><img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newLogo.svg" alt="Logo ThankYou Tipper" width="30%;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
