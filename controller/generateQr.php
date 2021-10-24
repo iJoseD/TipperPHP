@@ -1,6 +1,6 @@
 <?php session_start();
 
-include('/library/phpqrcode/qrlib.php');
+include('../library/phpqrcode/qrlib.php');
 
 $codesDir = "/dist/codes/";
 $codeFile = date('dmYhis').'.png';
