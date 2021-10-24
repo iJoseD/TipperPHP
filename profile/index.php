@@ -3,7 +3,7 @@
     <!-- Head -->
     <?php require_once('../dist/requireHead.php'); ?>
 
-    <body>
+    <body id="profile-edit">
         <!-- Navbar -->
         <?php require_once('../layouts/navbar.php'); ?>
 

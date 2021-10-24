@@ -10,7 +10,7 @@
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/profile/edit.php">Profile</a>
+                    <a class="nav-link" href="/profile/">Profile</a>
                 </li>
             </ul>
         </div>

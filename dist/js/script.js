@@ -41,7 +41,7 @@ $('#btn--checkCode').click(function() {
             console.log( data );
 
             if ( data == 'update_success' ) {
-                window.location.href = '/profile/edit.php';
+                window.location.href = '/profile/';
 
             } else if ( data == 'login_successful' ) {
                 window.location.href = '/';
