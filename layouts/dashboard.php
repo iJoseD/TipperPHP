@@ -41,7 +41,7 @@
 
     <div class="options row mt-5">
         <div class="card col-4 text-center">
-            <a href="http://">
+            <a href="/profile/">
                 <img src="/dist/img/icoUser.png" alt="icoUser">
                 <div class="card-body">
                     <h5 class="card-title text--blue">Account</h5>
@@ -49,7 +49,7 @@
             </a>
         </div>
         <div class="card col-4 text-center">
-            <a href="http://">
+            <a href="/historial/">
                 <img src="/dist/img/icoHistory.png" alt="icoHistory">
                 <div class="card-body">
                     <h5 class="card-title text--blue">Historial</h5>
@@ -57,7 +57,7 @@
             </a>
         </div>
         <div class="card col-4 text-center">
-            <a href="http://">
+            <a href="/my-qr/">
                 <img src="/dist/img/icoQr.png" alt="icoQr">
                 <div class="card-body">
                     <h5 class="card-title text--blue">My QR</h5>
