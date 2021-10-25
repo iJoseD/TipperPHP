@@ -22,8 +22,10 @@
                 <span class="text--orange">menu</span>
             </li>
             <li>
-                <img src="/dist/img/home-W.png" alt="icoUser">
-                <span>Home</span>
+                <a href="/">
+                    <img src="/dist/img/home-W.png" alt="icoUser">
+                    <span>Home</span>
+                </a>
             </li>
             <li>
                 <img src="/dist/img/user-W.png" alt="icoUser">
