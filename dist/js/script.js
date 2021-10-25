@@ -1,3 +1,13 @@
+// Menu
+$('#icoMenu').click(function() {
+    $('#menu').addClass('active');
+});
+
+$('#menu .close, #menu .overlay').click(function() {
+    $('#menu').removeClass('active');
+});
+
+// Generar código activación
 $('#btn--generateCode').click(function() {
     var dialCode = $('.iti__selected-dial-code').html();
     var phone = dialCode + $('#tel--login').val();

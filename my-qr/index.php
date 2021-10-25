@@ -5,17 +5,7 @@
 
     <body class="bgAzul">
         <!-- Navbar -->
-        <nav class="mt-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="/dist/img/menuWhite.png" width="70%" alt="icoMenu" id="icoMenu">
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <aside id="menu"></aside>
+        <?php require_once('../layouts/navbar-w.php'); ?>
         
         <!-- My QR -->
         <?php require_once('../layouts/my-qr.php'); ?>

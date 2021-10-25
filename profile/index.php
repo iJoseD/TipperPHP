@@ -5,7 +5,7 @@
 
     <body id="profile-edit">
         <!-- Navbar -->
-        <?php require_once('../layouts/navbar.php'); ?>
+        <?php require_once('../layouts/navbar-w.php'); ?>
 
         <!-- Profile -->
         <?php require_once('../layouts/profile.php'); ?>
