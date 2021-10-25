@@ -23,6 +23,8 @@
     }
 
     $conn->close();
+
+    echo $_SERVER['REQUEST_URI'];
 ?>
 
 <section class="container mb-5">
