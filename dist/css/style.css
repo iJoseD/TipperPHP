@@ -53,8 +53,8 @@ span.number {
 
 .form-floating > label { left: 10px !important; }
 
-.text--blue { color: #0c055f; }
-.text--orange { color: #ff3127; }
+.text--blue { color: #0c055f !important; }
+.text--orange { color: #ff3127 !important; }
 
 span.super-power {
   text-align: center;
