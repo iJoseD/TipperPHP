@@ -26,9 +26,9 @@
 ?>
 
 <section class="container">
-    <div class="row">
+    <div class="row mt-3">
         <div class="col-12 text-center">
-            <a href="/"><img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newLogo-W.svg" width="60%" alt="Logo ThankYou Tipper"></a>
+            <a href="/"><img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newLogo.svg" width="60%" alt="Logo ThankYou Tipper"></a>
         </div>
     </div>
     
@@ -47,6 +47,36 @@
     <div class="row mt-5">
         <div class="col-12 text-center">
             <h1 class="text--blue">Transaction</h1>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-12">
+            <h6 class="text--blue">Select an amount</h6>
+        </div>
+        <div class="col-3 mt-3">
+            <div class="card-custom">
+                <span class="amount">5</span>
+                <span class="symbol">$</span>
+            </div>
+        </div>
+        <div class="col-3 mt-3">
+            <div class="card-custom">
+                <span class="amount">10</span>
+                <span class="symbol">$</span>
+            </div>
+        </div>
+        <div class="col-3 mt-3">
+            <div class="card-custom">
+                <span class="amount">20</span>
+                <span class="symbol">$</span>
+            </div>
+        </div>
+        <div class="col-3 mt-3">
+            <div class="card-custom">
+                <span class="amount">30</span>
+                <span class="symbol">$</span>
+            </div>
         </div>
     </div>
 </section>
