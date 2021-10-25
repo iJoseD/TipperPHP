@@ -20,7 +20,6 @@
                 <div class="col-8">
                     <div class="card-body">
                         <h5 class="card-title text--blue">Good day, <?php echo $firstName; ?>!</h5>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
             </div>
@@ -44,7 +43,7 @@
             <a href="/profile/">
                 <img src="/dist/img/icoUser.png" alt="icoUser">
                 <div class="card-body">
-                    <h5 class="card-title text--blue">Account</h5>
+                    <h6 class="card-title text--blue">Account</h6>
                 </div>
             </a>
         </div>
@@ -52,7 +51,7 @@
             <a href="/historial/">
                 <img src="/dist/img/icoHistory.png" alt="icoHistory">
                 <div class="card-body">
-                    <h5 class="card-title text--blue">Historial</h5>
+                    <h6 class="card-title text--blue">Historial</h6>
                 </div>
             </a>
         </div>
@@ -60,7 +59,7 @@
             <a href="/my-qr/">
                 <img src="/dist/img/icoQr.png" alt="icoQr">
                 <div class="card-body">
-                    <h5 class="card-title text--blue">My QR</h5>
+                    <h6 class="card-title text--blue">My QR</h6>
                 </div>
             </a>
         </div>
