@@ -19,11 +19,18 @@ $('#btn--generateCode').click(function() {
             caso    : 'codeActivation',
             phone   : phone
         },
-        success: function(data) {
-            console.log( data );
+        success: function(response) {
+            console.log( response );
 
-            if ( data == 'success_sms' ) {
+            if ( response == 'error_send_sms' ) {
+                alert( response );
+            } else if ( response == 'error_update_db' ) {
+                alert( response );
+            } else if ( response == 'error_insert_db' ) {
+                alert( response );
+            } else {
                 $('.number').html(phone);
+                $('.code').html('The code is: <b>' + response + '</b>');
                 $('.login').addClass('hide');
                 $('.check-code').removeClass('hide');
             }

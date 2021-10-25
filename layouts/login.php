@@ -40,6 +40,9 @@
             <label for="tel--login" class="form-label">Enter the code that we have sent to the number: <span class="number"></span></label>
             <input type="number" id="check--code" class="form-control text-center">
         </div>
+        <div class="col-12 text-center">
+            <p class="code"></p>
+        </div>
         <div class="col-12 d-grid mt-5">
             <button type="button" id="btn--checkCode" class="btn btn-primary">Check code</button>
         </div>
