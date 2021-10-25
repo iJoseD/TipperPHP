@@ -16,3 +16,16 @@
         </div>
     </div>
 </nav>
+
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <span id="menu"></span>
+            </div>
+            <div class="col-10 text-center">
+                <a href="/"><img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newLogo.svg" alt="Logo ThankYou Tipper" width="30%;"></a>
+            </div>
+        </div>
+    </div>
+</nav>
