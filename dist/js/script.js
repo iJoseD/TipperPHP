@@ -166,3 +166,12 @@ window.intlTelInput(phoneLogin, {
     separateDialCode: true,
     utilsScript: "../dist/js/utils.js",
 });
+
+$('.super-power').click(function() {
+    var superPower = $(this).attr('data-superPower');
+
+    $('.super-power').removeClass('active');
+    $(this).addClass('active');
+
+    $('#superPower').val(superPower);
+});

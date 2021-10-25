@@ -56,24 +56,28 @@
         </div>
         <div class="col-3 mt-2">
             <div class="card-custom">
+                <div class="overlay"></div>
                 <span class="amount">5</span>
                 <span class="symbol">$</span>
             </div>
         </div>
         <div class="col-3 mt-2">
             <div class="card-custom">
+                <div class="overlay"></div>
                 <span class="amount">10</span>
                 <span class="symbol">$</span>
             </div>
         </div>
         <div class="col-3 mt-2">
             <div class="card-custom">
+                <div class="overlay"></div>
                 <span class="amount">20</span>
                 <span class="symbol">$</span>
             </div>
         </div>
         <div class="col-3 mt-2">
             <div class="card-custom">
+                <div class="overlay"></div>
                 <span class="amount">30</span>
                 <span class="symbol">$</span>
             </div>
