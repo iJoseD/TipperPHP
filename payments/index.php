@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
     <!-- Head -->
-    <?php require_once('dist/requireHead.php'); ?>
+    <?php require_once('../dist/requireHead.php'); ?>
 
     <body id="dashboard">
         <!-- Navbar -->
-        <?php require_once('layouts/navbar.php'); ?>
+        <?php require_once('../layouts/navbar.php'); ?>
 
         <!-- Dashboard -->
-        <?php require_once('layouts/payments.php'); ?>
+        <?php require_once('l../ayouts/payments.php'); ?>
         
         <!-- Bootstrap Bundle with Popper -->
-        <?php require_once('dist/requireFooter.php'); ?>
+        <?php require_once('../dist/requireFooter.php'); ?>
     </body>
 </html>
