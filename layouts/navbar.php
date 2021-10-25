@@ -12,37 +12,4 @@
     </div>
 </nav>
 
-<aside id="menu" class="aside-modal">
-    <div class="overlay"></div>
-    <div class="content">
-        <span class="close">X</span>
-        <ul>
-            <li class="item--menu">
-                <img src="/dist/img/menuWhite.png" alt="icoUser">
-                <span class="text--orange">menu</span>
-            </li>
-            <li>
-                <a href="/">
-                    <img src="/dist/img/home-W.png" alt="icoUser">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <img src="/dist/img/user-W.png" alt="icoUser">
-                <span>Profile</span>
-            </li>
-            <li>
-                <img src="/dist/img/history-W.png" alt="icoHistory">
-                <span>Service History</span>
-            </li>
-            <li>
-                <img src="/dist/img/qr-W.png" alt="icoQr">
-                <span>My QR</span>
-            </li>
-            <li>
-                <img src="/dist/img/close.png" alt="icoQr">
-                <span>Log Out</span>
-            </li>
-        </ul>
-    </div>
-</aside>
+<?php require_once('menu.php'); ?>
