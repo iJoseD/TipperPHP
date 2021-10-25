@@ -54,25 +54,25 @@
         <div class="col-12">
             <h6 class="text--blue">Select an amount</h6>
         </div>
-        <div class="col-3 mt-3">
+        <div class="col-3 mt-2">
             <div class="card-custom">
                 <span class="amount">5</span>
                 <span class="symbol">$</span>
             </div>
         </div>
-        <div class="col-3 mt-3">
+        <div class="col-3 mt-2">
             <div class="card-custom">
                 <span class="amount">10</span>
                 <span class="symbol">$</span>
             </div>
         </div>
-        <div class="col-3 mt-3">
+        <div class="col-3 mt-2">
             <div class="card-custom">
                 <span class="amount">20</span>
                 <span class="symbol">$</span>
             </div>
         </div>
-        <div class="col-3 mt-3">
+        <div class="col-3 mt-2">
             <div class="card-custom">
                 <span class="amount">30</span>
                 <span class="symbol">$</span>
