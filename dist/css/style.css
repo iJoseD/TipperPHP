@@ -119,3 +119,7 @@ span.thanks {
 body#my-qr > nav > div > div > div.col-8.text-center {
   display: none;
 }
+
+body#my-qr .container {
+  margin-bottom: 4em;
+}
