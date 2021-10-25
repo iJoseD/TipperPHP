@@ -4,7 +4,7 @@
         <!-- <span class="close">X</span> -->
         <ul>
             <li class="item--menu">
-                <a href="">
+                <a>
                     <img src="/dist/img/menuWhite.png" alt="icoUser">
                     <span class="text--orange">menu</span>
                 </a>
