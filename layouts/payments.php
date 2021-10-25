@@ -94,8 +94,8 @@
         <div class="col-12 text-center">
             <h1 class="text--blue">Payment</h1>
         </div>
-        <div class="col-12 mt-3 text-center">
-            <p class="text--orange amount">Amount: $ <span></span> usd</p>
+        <div class="col-12 mt-1 text-center">
+            <p class="text--orange amount fs-1">Amount: $ <span></span> usd</p>
         </div>
         <div class="col-12 mt-5 d-grid">
             <button type="button" class="proceedPay btn btn-primary">Proceed to Pay</button>
