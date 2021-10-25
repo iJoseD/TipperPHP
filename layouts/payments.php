@@ -101,12 +101,37 @@
             <input type="text" class="form-control" id="card-number">
             <label for="card-number">Card number</label>
         </div>
-        <div class="form-floating col-6">
-            <input type="text" class="form-control" id="valid-thru">
-            <label for="valid-thru">Valid Thru</label>
+        <div class="form-floating col-3 mt-3">
+            <select class="form-select" id="exp-month">
+                <option value="01" selected>01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <label for="exp-month">Month</label>
+        </div>
+        <div class="form-floating col-3 mt-3">
+            <select class="form-select" id="exp-year">
+                <?php
+                    $f = date("Y");
+                    for( $i = 6; $i > 0; $i-- ) {
+                        echo "<option value='". date("Y", strtotime("$f +$i year")) ."'>". date("Y", strtotime("$f +$i year")) ."</option>";
+                    }
+                    echo "<option value='". $f ."' selected>". $f ."</option>";
+                ?>
+            </select>
+            <label for="exp-year">Year</label>
         </div>
         <div class="form-floating col-6">
-            <input type="text" class="form-control" id="cvv">
+            <input type="password" class="form-control" id="cvv">
             <label for="cvv">CVV</label>
         </div>
         <div class="col-12 mt-5 d-grid">
