@@ -89,6 +89,11 @@ aside.aside-modal .content .close {
   margin-bottom: 2em !important;
 }
 
+#menu > div.content > ul > li.item--menu > a > span {
+  font-size: 30px !important;
+  font-weight: 800;
+}
+
 #menu li {
   list-style: none;
   display: flex;
@@ -110,9 +115,4 @@ aside.aside-modal .content .close {
 #menu li a span {
   color: #fff;
   font-size: 20px;
-}
-
-#menu > div.content > ul > li.item--menu > span {
-  font-size: 30px !important;
-  font-weight: 800;
 }
