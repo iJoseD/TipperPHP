@@ -17,7 +17,7 @@
     <div class="content">
         <span class="close">X</span>
         <ul>
-            <li>
+            <li class="item--menu">
                 <img src="/dist/img/menuWhite.png" alt="icoUser">
                 <span class="text--orange">menu</span>
             </li>

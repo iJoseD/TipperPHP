@@ -103,3 +103,8 @@ aside.aside-modal .content .close {
   color: #fff;
   font-size: 20px;
 }
+
+#menu .item--menu li span {
+  font-size: 30px !important;
+  font-weight: 800;
+}
