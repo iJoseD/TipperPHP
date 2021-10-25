@@ -1,9 +1,7 @@
-<?php session_start();
-
+<?php
+    session_start();
     include "../library/mcript.php";
-
     $encryptedPhone = $encriptar( $_SESSION['phone'] );
-    
 ?>
 
 <section class="container">
