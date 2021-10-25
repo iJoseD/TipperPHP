@@ -131,3 +131,12 @@ body#payments > section > div.row.mt-5 > div.col-12.text-center > img {
 body#payments > section > div.row.mt-5 > div.col-12.text-center > p {
   font-weight: 700;
 }
+
+body#payments span.superPower {
+  background: #ff3127;
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 0px 0px 15px 15px;
+}
