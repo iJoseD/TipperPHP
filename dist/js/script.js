@@ -142,6 +142,15 @@ $('#btn--updateProfile').click(function() {
     });
 });
 
+$('.card-custom .overlay').click(function() {
+    var amount = $(this).attr('data-amount');
+
+    $('.card-custom').removeClass('active');
+    $('#amount-' + amount).addClass('active');
+
+    $('#amount').val(amount);
+});
+
 var phoneLogin = document.querySelector("#tel--login");
 window.intlTelInput(phoneLogin, {
     // allowDropdown: false,
@@ -165,13 +174,4 @@ window.intlTelInput(phoneLogin, {
     // preferredCountries: ['cn', 'jp'],
     separateDialCode: true,
     utilsScript: "../dist/js/utils.js",
-});
-
-$('.card-custom .overlay').click(function() {
-    var amount = $(this).attr('data-amount');
-
-    $('.card-custom').removeClass('active');
-    $('#amount-' + amount).addClass('active');
-
-    $('#amount').val(amount);
 });
