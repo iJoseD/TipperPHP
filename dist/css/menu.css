@@ -85,6 +85,10 @@ aside.aside-modal .content .close {
   cursor: pointer;
 }
 
+#menu li.item--menu {
+  margin-bottom: 2em !important;
+}
+
 #menu li {
   list-style: none;
   display: flex;
