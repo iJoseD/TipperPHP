@@ -24,11 +24,18 @@
   border: 2px solid #0c055f;
 }
 
+.sendMoney,
 #btn--generateCode,
 #btn--checkCode,
 #btn--updateProfile {
   border-radius: 50px;
   background-color: #0c055f !important;
+  border: none !important;
+}
+
+.proceedPay {
+  border-radius: 50px;
+  background-color: #ff3127 !important;
   border: none !important;
 }
 

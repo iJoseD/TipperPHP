@@ -44,14 +44,12 @@
         </div>
     </div>
 
-    <div class="row mt-5">
+    <!-- Transaction -->
+    <div class="row mt-5 transaction">
         <div class="col-12 text-center">
             <h1 class="text--blue">Transaction</h1>
         </div>
-    </div>
-
-    <div class="row mt-3">
-        <div class="col-12">
+        <div class="col-12 mt-3">
             <h6 class="text--blue">Select an amount</h6>
         </div>
         <div class="col-3 mt-2">
@@ -85,6 +83,22 @@
         <div class="form-floating col-12 hide">
             <input type="text" class="form-control" id="amount">
             <label for="amount">Amount</label>
+        </div>
+        <div class="col-12 mt-5 d-grid">
+            <button type="button" class="sendMoney btn btn-primary">Send Money</button>
+        </div>
+    </div>
+
+    <!-- Payment -->
+    <div class="row mt-5 payment hide">
+        <div class="col-12 text-center">
+            <h1 class="text--blue">Payment</h1>
+        </div>
+        <div class="col-12 mt-3 text-center">
+            <p class="text--orange amount">Amount: $ <span></span> usd</p>
+        </div>
+        <div class="col-12 mt-5 d-grid">
+            <button type="button" class="proceedPay btn btn-primary">Proceed to Pay</button>
         </div>
     </div>
 </section>

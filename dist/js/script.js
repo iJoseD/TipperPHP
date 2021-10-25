@@ -149,6 +149,12 @@ $('.card-custom .overlay').click(function() {
     $('#amount-' + amount).addClass('active');
 
     $('#amount').val(amount);
+    $('.payment .amount span').html(amount);
+});
+
+$('.sendMoney').click(function() {
+    $('.transaction').addClass('hide');
+    $('.payment').removeClass('hide');
 });
 
 var phoneLogin = document.querySelector("#tel--login");
