@@ -112,10 +112,6 @@ span.thanks {
   border-radius: 0px 0px 10px 10px;
 }
 
-aside#menu {
-  display: none;
-}
-
 #dashboard > nav > div > div {
   align-items: center;
 }
