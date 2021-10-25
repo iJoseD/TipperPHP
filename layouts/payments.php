@@ -25,7 +25,7 @@
     $conn->close();
 ?>
 
-<section class="container">
+<section class="container mb-5">
     <div class="row mt-3">
         <div class="col-12 text-center">
             <a href="/"><img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newLogo.svg" width="60%" alt="Logo ThankYou Tipper"></a>
