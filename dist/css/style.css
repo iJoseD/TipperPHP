@@ -115,3 +115,7 @@ span.thanks {
 aside#menu {
   display: none;
 }
+
+#dashboard > nav > div > div {
+  align-items: center;
+}
