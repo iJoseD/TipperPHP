@@ -18,6 +18,10 @@
         <span class="close">X</span>
         <ul>
             <li>
+                <img src="/dist/img/menuWhite.png" alt="icoUser">
+                <span class="text--orange">menu</span>
+            </li>
+            <li>
                 <img src="/dist/img/home-W.png" alt="icoUser">
                 <span>Home</span>
             </li>
