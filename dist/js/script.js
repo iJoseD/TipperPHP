@@ -3,7 +3,7 @@ $('#icoMenu').click(function() {
     $('#menu').addClass('active');
 });
 
-$('#menu .close, #menu .overlay').click(function() {
+$('#menu > div.content > ul > li.item--menu').click(function() {
     $('#menu').removeClass('active');
 });
 

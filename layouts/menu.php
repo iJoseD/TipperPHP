@@ -1,7 +1,7 @@
 <aside id="menu" class="aside-modal">
     <div class="overlay"></div>
     <div class="content">
-        <span class="close">X</span>
+        <!-- <span class="close">X</span> -->
         <ul>
             <li class="item--menu">
                 <a href="">
