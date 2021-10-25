@@ -97,6 +97,18 @@
         <div class="col-12 text-center">
             <p class="text--orange amount fs-1">Amount: $ <span></span> usd</p>
         </div>
+        <div class="form-floating col-12">
+            <input type="text" class="form-control" id="card-number">
+            <label for="card-number">Card number</label>
+        </div>
+        <div class="form-floating col-6">
+            <input type="text" class="form-control" id="valid-thru">
+            <label for="valid-thru">Valid Thru</label>
+        </div>
+        <div class="form-floating col-6">
+            <input type="text" class="form-control" id="cvv">
+            <label for="cvv">CVV</label>
+        </div>
         <div class="col-12 mt-5 d-grid">
             <button type="button" class="proceedPay btn btn-primary">Proceed to Pay</button>
         </div>
