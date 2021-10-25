@@ -31,16 +31,16 @@
             <img src="<?php echo $avatar; ?>" alt="Profile Avatar" width="50%">
         </div>
         <div class="col-12 mt-3 text-center">
-            <p>I'm <?php echo $firstName; ?> and my super power is:</p>
+            <p class="text--blue">I'm <?php echo $firstName; ?> and my super power is:</p>
         </div>
-        <div class="col-12 mt-3 text-center">
+        <div class="col-12 text-center">
             <span class="superPower">To <?php echo $superPower; ?></span>
         </div>
     </div>
 
-    <div class="row mt-3">
+    <div class="row mt-5">
         <div class="col-12 text-center">
-            <h2 class="text--blue">Transactions</h2>
+            <h1 class="text--blue">Transactions</h1>
         </div>
     </div>
 </section>
