@@ -167,11 +167,11 @@ window.intlTelInput(phoneLogin, {
     utilsScript: "../dist/js/utils.js",
 });
 
-$('.super-power').click(function() {
-    var superPower = $(this).attr('data-superPower');
+$('.card-custom .overlay').click(function() {
+    var amount = $(this).attr('data-amount');
 
-    $('.super-power').removeClass('active');
-    $(this).addClass('active');
+    $('.card-custom').removeClass('active');
+    $('#amount-' + amount).addClass('active');
 
-    $('#superPower').val(superPower);
+    $('#amount').val(amount);
 });

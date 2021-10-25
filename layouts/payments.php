@@ -55,32 +55,36 @@
             <h6 class="text--blue">Select an amount</h6>
         </div>
         <div class="col-3 mt-2">
-            <div class="card-custom">
-                <div class="overlay"></div>
+            <div class="card-custom" id="amount-5">
+                <div class="overlay" data-amount="5"></div>
                 <span class="amount">5</span>
                 <span class="symbol">$</span>
             </div>
         </div>
         <div class="col-3 mt-2">
-            <div class="card-custom">
-                <div class="overlay"></div>
+            <div class="card-custom" id="amount-10">
+                <div class="overlay" data-amount="10"></div>
                 <span class="amount">10</span>
                 <span class="symbol">$</span>
             </div>
         </div>
         <div class="col-3 mt-2">
-            <div class="card-custom">
-                <div class="overlay"></div>
+            <div class="card-custom" id="amount-20">
+                <div class="overlay" data-amount="20"></div>
                 <span class="amount">20</span>
                 <span class="symbol">$</span>
             </div>
         </div>
         <div class="col-3 mt-2">
-            <div class="card-custom">
-                <div class="overlay"></div>
+            <div class="card-custom" id="amount-30">
+                <div class="overlay" data-amount="30"></div>
                 <span class="amount">30</span>
                 <span class="symbol">$</span>
             </div>
+        </div>
+        <div class="form-floating col-12 hide">
+            <input type="text" class="form-control" id="amount">
+            <label for="amount">Amount</label>
         </div>
     </div>
 </section>
