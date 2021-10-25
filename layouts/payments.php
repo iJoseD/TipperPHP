@@ -18,6 +18,7 @@
         while($row = $result->fetch_assoc()) {
             if ( empty( $row['avatar'] ) ) { $avatar = '../dist/img/user.png'; } else { $avatar = $row['avatar']; }
             $firstName = $row['firstname'];
+            $superPower = $row['superPower'];
         }
     }
 
@@ -29,8 +30,11 @@
         <div class="col-12 text-center">
             <img src="<?php echo $avatar; ?>" alt="Profile Avatar" width="50%">
         </div>
-        <div class="col-12 text-center">
+        <div class="col-12 mt-3 text-center">
             <p>I'm <?php echo $firstName; ?> and my super power is:</p>
+        </div>
+        <div class="col-12 mt-3 text-center">
+            <span class="superPower">To <?php echo $superPower; ?></span>
         </div>
     </div>
 

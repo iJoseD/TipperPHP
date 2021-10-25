@@ -121,8 +121,8 @@ body#my-qr > nav > div > div > div.col-8.text-center {
 }
 
 body#payments > section > div.row.mt-5 > div.col-12.text-center > img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 100%;
   border: 3px solid #ff3127;
