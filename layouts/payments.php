@@ -27,9 +27,9 @@
 <section class="container">
     <div class="row mt-5">
         <div class="col-12 text-center">
-            <img src="<?php echo $avatar; ?>" alt="Profile Avatar">
+            <img src="<?php echo $avatar; ?>" alt="Profile Avatar" width="50%">
         </div>
-        <div class="col-12 text center">
+        <div class="col-12 text-center">
             <p>I'm <?php echo $firstName; ?> and my super power is:</p>
         </div>
     </div>

@@ -119,3 +119,15 @@ span.thanks {
 body#my-qr > nav > div > div > div.col-8.text-center {
   display: none;
 }
+
+body#payments > section > div.row.mt-5 > div.col-12.text-center > img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid #ff3127;
+}
+
+body#payments > section > div.row.mt-5 > div.col-12.text-center > p {
+  font-weight: 700;
+}
