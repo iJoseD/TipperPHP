@@ -104,7 +104,7 @@ aside.aside-modal .content .close {
   font-size: 20px;
 }
 
-#menu .item--menu li span {
+#menu > div.content > ul > li.item--menu > span {
   font-size: 30px !important;
   font-weight: 800;
 }
