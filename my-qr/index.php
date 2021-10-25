@@ -3,7 +3,7 @@
     <!-- Head -->
     <?php require_once('../dist/requireHead.php'); ?>
 
-    <body class="bgAzul">
+    <body class="bgAzul" id="my-qr">
         <!-- Navbar -->
         <?php require_once('../layouts/navbar-w.php'); ?>
         

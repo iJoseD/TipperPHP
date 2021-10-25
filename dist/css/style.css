@@ -115,3 +115,7 @@ span.thanks {
 #dashboard > nav > div > div {
   align-items: center;
 }
+
+body#my-qr > nav > div > div > div.col-8.text-center {
+  display: none;
+}
