@@ -8,7 +8,7 @@
         <?php require_once('../layouts/navbar.php'); ?>
 
         <!-- Dashboard -->
-        <?php require_once('l../ayouts/payments.php'); ?>
+        <?php require_once('../layouts/payments.php'); ?>
         
         <!-- Bootstrap Bundle with Popper -->
         <?php require_once('../dist/requireFooter.php'); ?>
