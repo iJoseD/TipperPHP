@@ -130,7 +130,7 @@
             </select>
             <label for="exp-year">Year</label>
         </div>
-        <div class="form-floating col-6">
+        <div class="form-floating col-6 mmt-3">
             <input type="password" class="form-control" id="cvv">
             <label for="cvv">CVV</label>
         </div>
