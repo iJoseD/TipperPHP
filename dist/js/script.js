@@ -160,18 +160,18 @@ $('.card-custom .overlay').click(function() {
     var tyt = (amount * 5) / 100;
     var stripeConnect = (amount * 0.25) / 100;
     var tCost = parseFloat(creditCard.toFixed(2)) + parseFloat(0.30) + parseFloat(tyt.toFixed(2)) + parseFloat(stripeConnect.toFixed(2));
-
-    console.log( creditCard.toFixed(2) + ' - 0.30 - ' + tyt.toFixed(2) + ' - ' + stripeConnect.toFixed(2) );
+    var totalPayment = parseFloat( amount.toFixed(2) ) + parseFloat( tCost.toFixed(2) );
 
     $('.card-custom').removeClass('active');
     $('#amount-' + amount).addClass('active');
 
     $('.d-table').removeClass('hide');
-    $('.t-amount').html('$' + amount + '.00');
-    $('.tCost').html('$' + tCost);
+    $('.t-amount').html('$' + amount.toFixed(2));
+    $('.tCost').html('$' + tCost.toFixed(2));
+    $('.total-amount').html(totalPayment);
 
-    $('#amount').val(amount);
-    $('.payment .amount span').html(amount);
+    $('#amount').val(totalPayment);
+    $('.payment .amount span').html(totalPayment);
 });
 
 $('.sendMoney').click(function() {
