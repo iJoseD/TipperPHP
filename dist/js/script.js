@@ -162,7 +162,7 @@ $('.card-custom .overlay').click(function() {
     var stripeConnect = (amount * 0.25) / 100;
     var tCost = parseInt(creditCard) + parseInt(creditCardCents) + parseInt(tyt) + parseInt(stripeConnect);
 
-    console.log( creditCard.toFixed(2) + ' - ' + creditCardCents + ' - ' + tyt + ' - ' + stripeConnect );
+    console.log( creditCard.toFixed(2) + ' - ' + creditCardCents.toFixed(2) + ' - ' + tyt.toFixed(2) + ' - ' + stripeConnect.toFixed(2) );
 
     $('.card-custom').removeClass('active');
     $('#amount-' + amount).addClass('active');
