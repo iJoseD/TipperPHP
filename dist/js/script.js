@@ -162,6 +162,8 @@ $('.card-custom .overlay').click(function() {
     var stripeConnect = (amount * 0.25) / 100;
     var tCost = parseInt(creditCard) + parseInt(creditCardCents) + parseInt(tyt) + parseInt(stripeConnect);
 
+    console.log( creditCard + ' - ' + creditCardCents + ' - ' + tyt + ' - ' + stripeConnect );
+
     $('.card-custom').removeClass('active');
     $('#amount-' + amount).addClass('active');
 
