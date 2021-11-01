@@ -154,8 +154,13 @@ $('#btn--updateProfile').click(function() {
 
 $('.card-custom .overlay').click(function() {
     var amount = $(this).attr('data-amount');
-    var porcentaje = (8.15 * 100) / 1000;
-    var tCost = parseInt(amount) + parseInt(porcentaje) + parseInt(0.30);
+    
+    // Transaction cost
+    var creditCard = (amount * 2.9) / 100;
+    var creditCardCents = creditCard + 0.30;
+    var tyt = (amount * 5) / 100;
+    var stripeConnect = (amount * 0.25) / 100;
+    var tCost = parseInt(creditCard) + parseInt(creditCardCents) + parseInt(tyt) + parseInt(stripeConnect);
 
     $('.card-custom').removeClass('active');
     $('#amount-' + amount).addClass('active');
