@@ -154,7 +154,8 @@ $('#btn--updateProfile').click(function() {
 
 $('.card-custom .overlay').click(function() {
     var amount = $(this).attr('data-amount');
-    var tCost = amount + (8.15 * 100 / 1000) + 0.30;
+    var porcentaje = parseInt(8.15) * parseInt(100) / parseInt(1000);
+    var tCost = parseInt(amount) + parseInt(porcentaje) + parseInt(0.30);
 
     $('.card-custom').removeClass('active');
     $('#amount-' + amount).addClass('active');
