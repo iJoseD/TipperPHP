@@ -80,15 +80,15 @@
                 <span class="symbol">$</span>
             </div>
         </div>
-        <div class="col-12 mt-3">
+        <div class="col-12 mt-5">
             <table class="table table-bordered hide">
                 <tbody>
                     <tr>
-                        <td colspan="2">Tip to <?php echo $superPower; ?></td>
+                        <td class="fw-bold" colspan="2">Tip to <?php echo $superPower; ?></td>
                         <td class="text-center t-amount"></td>
                     </tr>
                     <tr>
-                        <td colspan="2">Transaction cost</td>
+                        <td class="fw-bold" colspan="2">Transaction cost</td>
                         <td class="text-center tCost"></td>
                     </tr>
                 </tbody>
