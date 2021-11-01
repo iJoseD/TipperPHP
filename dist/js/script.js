@@ -157,12 +157,11 @@ $('.card-custom .overlay').click(function() {
     
     // Transaction cost
     var creditCard = (amount * 2.9) / 100;
-    var creditCardCents = creditCard + 0.30;
     var tyt = (amount * 5) / 100;
     var stripeConnect = (amount * 0.25) / 100;
-    var tCost = parseFloat(creditCard.toFixed(2)) + parseFloat(creditCardCents.toFixed(2)) + parseFloat(tyt.toFixed(2)) + parseFloat(stripeConnect.toFixed(2));
+    var tCost = parseFloat(creditCard.toFixed(2)) + parseFloat(0.30) + parseFloat(tyt.toFixed(2)) + parseFloat(stripeConnect.toFixed(2));
 
-    console.log( creditCard.toFixed(2) + ' - ' + creditCardCents.toFixed(2) + ' - ' + tyt.toFixed(2) + ' - ' + stripeConnect.toFixed(2) );
+    console.log( creditCard.toFixed(2) + ' - 0.30 - ' + tyt.toFixed(2) + ' - ' + stripeConnect.toFixed(2) );
 
     $('.card-custom').removeClass('active');
     $('#amount-' + amount).addClass('active');
