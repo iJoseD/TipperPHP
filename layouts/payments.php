@@ -81,15 +81,15 @@
             </div>
         </div>
         <div class="col-12 mt-3">
-            <table class="table hide">
+            <table class="table table-bordered hide">
                 <tbody>
                     <tr>
                         <td colspan="2">Tip to <?php echo $superPower; ?></td>
-                        <td class="t-amount"></td>
+                        <td class="text-center t-amount"></td>
                     </tr>
                     <tr>
                         <td colspan="2">Transaction cost</td>
-                        <td class="tCost"></td>
+                        <td class="text-center tCost"></td>
                     </tr>
                 </tbody>
             </table>
