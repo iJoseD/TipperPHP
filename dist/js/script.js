@@ -158,7 +158,7 @@ $('.card-custom .overlay').click(function() {
     $('.card-custom').removeClass('active');
     $('#amount-' + amount).addClass('active');
 
-    $('.table').removeClass('hide');
+    $('.d-table').removeClass('hide');
     $('.t-amount').html('$' + amount + '.00');
 
     $('#amount').val(amount);

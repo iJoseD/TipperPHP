@@ -80,8 +80,8 @@
                 <span class="symbol">$</span>
             </div>
         </div>
-        <div class="col-12 mt-5">
-            <table class="table table-bordered hide">
+        <div class="col-12 mt-5 d-table hide">
+            <table class="table table-bordered">
                 <tbody>
                     <tr>
                         <td class="fw-bold" colspan="2">Tip to <?php echo $superPower; ?></td>
