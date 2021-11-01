@@ -1,4 +1,4 @@
-.hide { display: none; }
+.hide { display: none !important; }
 
 .header {
   background-image: url(https://thankyoutipper.com/wp-content/uploads/2021/08/bgAzul.png);
