@@ -80,6 +80,20 @@
                 <span class="symbol">$</span>
             </div>
         </div>
+        <div class="col-12 mt-3">
+            <table class="table hide">
+                <tbody>
+                    <tr>
+                        <td colspan="2">Tip to <?php echo $superPower; ?></td>
+                        <td class="t-amount"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Transaction cost</td>
+                        <td class="tCost"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div class="form-floating col-12 hide">
             <input type="text" class="form-control" id="amount">
             <label for="amount">Amount</label>
