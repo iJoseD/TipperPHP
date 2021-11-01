@@ -51,6 +51,10 @@ span.number {
   background-color: #0c055f;
 }
 
+.bgOrange {
+  background-color: #ff3127;
+}
+
 #profile-edit section.container {
   background-color: #fff;
   margin: 4em 0em;
