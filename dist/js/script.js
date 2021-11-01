@@ -166,12 +166,12 @@ $('.card-custom .overlay').click(function() {
     $('#amount-' + amount).addClass('active');
 
     $('.d-table').removeClass('hide');
-    $('.t-amount').html('$' + amount);
+    $('.t-amount').html('$' + amount + '.00');
     $('.tCost').html('$' + tCost.toFixed(2));
     $('.total-amount').html(totalPayment.toFixed(2));
 
     $('#amount').val(totalPayment.toFixed(2));
-    $('.payment .amount span').html(totalPayment.toFixed(2));
+    $('.payment .amount span').html('$' + totalPayment.toFixed(2));
 });
 
 $('.sendMoney').click(function() {
