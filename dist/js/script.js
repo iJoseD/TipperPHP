@@ -166,7 +166,7 @@ $('.card-custom .overlay').click(function() {
     $('#amount-' + amount).addClass('active');
 
     $('.d-table').removeClass('hide');
-    $('.t-amount').html('$' + amount.toFixed(2));
+    $('.t-amount').html('$' + amount);
     $('.tCost').html('$' + tCost.toFixed(2));
     $('.total-amount').html(totalPayment.toFixed(2));
 
