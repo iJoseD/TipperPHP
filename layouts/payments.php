@@ -91,7 +91,7 @@
                         <td class="fw-bold" colspan="2">Transaction cost</td>
                         <td class="text-center tCost"></td>
                     </tr>
-                    <tr>
+                    <tr class="bgAzul text-white">
                         <td class="fw-bold" colspan="2">Total</td>
                         <td class="text-center total-amount"></td>
                     </tr>
