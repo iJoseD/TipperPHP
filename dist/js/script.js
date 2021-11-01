@@ -154,12 +154,14 @@ $('#btn--updateProfile').click(function() {
 
 $('.card-custom .overlay').click(function() {
     var amount = $(this).attr('data-amount');
+    var tCost = amount + (8.15 * 100 / 1000) + 0.30;
 
     $('.card-custom').removeClass('active');
     $('#amount-' + amount).addClass('active');
 
     $('.d-table').removeClass('hide');
     $('.t-amount').html('$' + amount + '.00');
+    $('.tCost').html('$' + tCost);
 
     $('#amount').val(amount);
     $('.payment .amount span').html(amount);
