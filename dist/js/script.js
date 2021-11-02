@@ -179,8 +179,44 @@ $('.sendMoney').click(function() {
     $('.payment').removeClass('hide');
 });
 
-payform.cardNumberInput(document.getElementById('ccnum'));
+$('.proceedPay').click(function() {
+    var ccnum    = $('#ccnum').val();
+    var expMonth = $('#exp-month').val();
+    var expYear  = $('#exp-year').val();
+    var cvv      = $('#cvv').val();
+    var amount   = $('#amount').val();
 
+    $.ajax({
+        url: '/controller/payment.php',
+        type: 'POST',
+        data: {
+            caso     : 'payment',
+            ccnum    : ccnum,
+            expMonth : expMonth,
+            expYear  : expYear,
+            cvv      : cvv,
+            amount   : amount
+        },
+        success: function(data) {
+            console.log( data );
+
+            if ( data == 'error_payment_methods' ) {
+                console.log( data );
+            } else if ( data == 'error_payment_intents' ) {
+                console.log( data );
+            } else if ( data == 'error_transfers' ) {
+                console.log( data );
+            } if ( data == 'successful_payment' ) {
+                console.log( data );
+            }
+        },
+        error: function() {
+            console.log( 'ajax_generateCode_error' );
+        }
+    });
+});
+
+// SELECTOR DE PAÍS EN EL LOGIN
 var phoneLogin = document.querySelector("#tel--login");
 window.intlTelInput(phoneLogin, {
     // allowDropdown: false,
@@ -205,3 +241,6 @@ window.intlTelInput(phoneLogin, {
     separateDialCode: true,
     utilsScript: "../dist/js/utils.js",
 });
+
+// VALIDADOR DE TARJETA DE CREDITO
+payform.cardNumberInput(document.getElementById('ccnum'));
