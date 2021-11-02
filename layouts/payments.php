@@ -119,7 +119,7 @@
             <input type="text" class="form-control" id="card-number">
             <label for="card-number">Card number</label>
         </div>
-        <div class="form-floating col-3 mt-3">
+        <div class="form-floating col-4 mt-3">
             <select class="form-select" id="exp-month">
                 <option value="01" selected>01</option>
                 <option value="02">02</option>
@@ -136,7 +136,7 @@
             </select>
             <label for="exp-month">Month</label>
         </div>
-        <div class="form-floating col-3 mt-3">
+        <div class="form-floating col-4 mt-3">
             <select class="form-select" id="exp-year">
                 <?php
                     $f = date("Y");
@@ -148,7 +148,7 @@
             </select>
             <label for="exp-year">Year</label>
         </div>
-        <div class="form-floating col-6 mt-3">
+        <div class="form-floating col-4 mt-3">
             <input type="password" class="form-control" id="cvv">
             <label for="cvv">CVV</label>
         </div>
