@@ -179,6 +179,8 @@ $('.sendMoney').click(function() {
     $('.payment').removeClass('hide');
 });
 
+payform.cardNumberInput(document.getElementById('ccnum'));
+
 var phoneLogin = document.querySelector("#tel--login");
 window.intlTelInput(phoneLogin, {
     // allowDropdown: false,

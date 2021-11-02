@@ -116,7 +116,7 @@
             <p class="text--orange amount fs-1">Amount: $ <span></span> usd</p>
         </div>
         <div class="form-floating col-12">
-            <input type="text" class="form-control" id="card-number">
+            <input type="text" class="form-control" name="ccnum" id="ccnum" inputmode="numeric" autocomplete="cc-number" placeholder="4242 4242 4242 4242">
             <label for="card-number">Card number</label>
         </div>
         <div class="form-floating col-4 mt-3">
