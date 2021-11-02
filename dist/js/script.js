@@ -184,7 +184,7 @@ $('.proceedPay').click(function() {
     var expMonth = $('#exp-month').val();
     var expYear  = $('#exp-year').val();
     var cvv      = $('#cvv').val();
-    var amount   = $('#amount').val();
+    var amount   = $('#amount').val() * 100;
 
     $.ajax({
         url: '/controller/payment.php',
