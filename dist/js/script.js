@@ -156,11 +156,11 @@ $('.card-custom .overlay').click(function() {
     var amount = $(this).attr('data-amount');
     
     // Transaction cost
-    var creditCard = (amount * 2.9) / 100;
-    var tyt = (amount * 5) / 100;
-    var stripeConnect = (amount * 0.25) / 100;
-    var tCost = parseFloat(creditCard.toFixed(2)) + parseFloat(0.30) + parseFloat(tyt.toFixed(2)) + parseFloat(stripeConnect.toFixed(2));
-    var totalPayment = parseFloat( amount ) + parseFloat( tCost.toFixed(2) );
+    var creditCard      = (amount * 2.9) / 100;
+    var tyt             = (amount * 5) / 100;
+    var stripeConnect   = (amount * 0.25) / 100;
+    var tCost           = parseFloat(creditCard.toFixed(2)) + parseFloat(0.30) + parseFloat(tyt.toFixed(2)) + parseFloat(stripeConnect.toFixed(2));
+    var totalPayment    = parseFloat( amount ) + parseFloat( tCost.toFixed(2) );
 
     $('.card-custom').removeClass('active');
     $('#amount-' + amount).addClass('active');
