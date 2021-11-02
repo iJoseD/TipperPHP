@@ -216,6 +216,11 @@ $('.proceedPay').click(function() {
     });
 });
 
+// VALIDADOR DE TARJETA DE CREDITO
+if ( window.location.pathname == '/payments/' ) {
+    payform.cardNumberInput(document.getElementById('ccnum'));
+}
+
 // SELECTOR DE PAÍS EN EL LOGIN
 var phoneLogin = document.querySelector("#tel--login");
 window.intlTelInput(phoneLogin, {
@@ -241,6 +246,3 @@ window.intlTelInput(phoneLogin, {
     separateDialCode: true,
     utilsScript: "../dist/js/utils.js",
 });
-
-// VALIDADOR DE TARJETA DE CREDITO
-payform.cardNumberInput(document.getElementById('ccnum'));
