@@ -58,7 +58,7 @@ if ( $caso == 'payment' ) {
         curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_intents');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, "amount=2000&currency=usd&payment_method_types[]=card&description=TEST_PAYMENT&payment_method=$paymentMethod&confirm=true");
+        curl_setopt($ch, CURLOPT_POSTFIELDS, "amount=$amount&currency=usd&payment_method_types[]=card&description=TEST_PAYMENT&payment_method=$paymentMethod&confirm=true");
         curl_setopt($ch, CURLOPT_USERPWD, $SECRET_TEST . ':' . '');
 
         $headers = array();
@@ -75,7 +75,7 @@ if ( $caso == 'payment' ) {
             curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/transfers');
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, "amount=2000&currency=usd&destination=acct_1JGQnbBaJqNnUOac");
+            curl_setopt($ch, CURLOPT_POSTFIELDS, "amount=$amount&currency=usd&destination=acct_1JVeKzPXms5KFVvi");
             curl_setopt($ch, CURLOPT_USERPWD, $SECRET_TEST . ':' . '');
 
             $headers = array();
