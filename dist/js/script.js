@@ -201,8 +201,6 @@ $('.proceedPay').click(function() {
             tAmount  : tAmount
         },
         success: function(data) {
-            console.log( data );
-
             if ( data == 'error_payment_methods' ) {
                 console.log( data );
             } else if ( data == 'error_payment_intents' ) {

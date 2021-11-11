@@ -160,4 +160,20 @@
             <button type="button" class="proceedPay btn btn-primary">Proceed to Pay</button>
         </div>
     </div>
+
+    <!-- Processing payment -->
+    <div class="row mt-5 processing-payment hide">
+        <div class="col-12 text-center">
+            <div class="spinner-border" style="width: 5rem; height: 5rem;" role="status"></div>
+        </div>
+        <div class="col-12 text-center">
+            <span class="mt-3">Processing payment...</span>
+        </div>
+    </div>
+
+    <!-- Successful payment -->
+    <div class="row mt-5 successful-payment hide">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_hpd7f5j0.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+    </div>
 </section>

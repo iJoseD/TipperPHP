@@ -32,8 +32,7 @@ $cvv      = $_POST['cvv'];
 $amount   = $_POST['amount'];
 $tAmount  = $_POST['tAmount'];
 
-if ( $caso == 'payment' ) {
-    // CREAR METODO DE PAGO Y OBTENER ID
+if ( $caso == 'payment' ) { // CREAR METODO DE PAGO Y OBTENER ID
     $ch = curl_init();
 
     curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_methods');
@@ -52,8 +51,7 @@ if ( $caso == 'payment' ) {
 
     if (curl_errno($ch)) {
         echo 'error_payment_methods';
-    } else {
-        // CREAR INTENCIÓN DE PAGO Y REGISTRAR
+    } else { // CREAR INTENCIÓN DE PAGO Y REGISTRAR
         $ch = curl_init();
 
         curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_intents');
@@ -69,8 +67,7 @@ if ( $caso == 'payment' ) {
         $result = curl_exec($ch);
         if (curl_errno($ch)) {
             echo 'error_payment_intents';
-        } else {
-            // TRANSFERIR A LA CUENTA CONECTADA
+        } else { // TRANSFERIR A LA CUENTA CONECTADA
             $ch = curl_init();
 
             curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/transfers');
