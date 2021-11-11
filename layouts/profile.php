@@ -21,7 +21,7 @@
                 <div class="card">
                     <img class="card-img-top" src="<?php echo $avatar; ?>">
                     <div class="card-body d-grid">
-                        <input type="file" class="form-control-file" name="img--profile" id="img--profile">
+                        <input type="file" class="form-control" name="img--profile" id="img--profile">
                         <input type="button" class="btn btn-primary upload mt-3" value="Upload">
                     </div>
                 </div>

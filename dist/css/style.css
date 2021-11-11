@@ -178,3 +178,9 @@ body#payments span.superPower {
   font-size: 20px;
   font-weight: 700;
 }
+
+section.s--myqr > div:nth-child(4) > div.card.col-10 > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -4,7 +4,7 @@
     $encryptedPhone = $encriptar( $_SESSION['phone'] );
 ?>
 
-<section class="container">
+<section class="container s--myqr">
     <div class="row">
         <div class="col-12 text-center">
             <a href="/"><img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newLogo-W.svg" width="60%" alt="Logo ThankYou Tipper"></a>
@@ -26,7 +26,7 @@
         <div class="col-1"></div>
         <div class="card col-10">
             <div class="card-body text-center">
-                <img src="https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=https://myapp.thankyoutipper.com/payments/?id=<?php echo $encryptedPhone; ?>&choe=UTF-8" alt="Generate QR Code">
+                <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://myapp.thankyoutipper.com/payments/?id=<?php echo $encryptedPhone; ?>&choe=UTF-8" alt="Generate QR Code">
                 <h2 class="card-title text--orange" style="font-weight: 800;"><?php echo $_SESSION['firstName']; ?></h2>
             </div>
         </div>
