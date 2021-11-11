@@ -30,6 +30,7 @@ $expMonth = $_POST['expMonth'];
 $expYear  = $_POST['expYear'];
 $cvv      = $_POST['cvv'];
 $amount   = $_POST['amount'];
+$tAmount  = $_POST['tAmount'];
 
 if ( $caso == 'payment' ) {
     // CREAR METODO DE PAGO Y OBTENER ID
@@ -58,7 +59,7 @@ if ( $caso == 'payment' ) {
         curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_intents');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, "amount=$amount&currency=usd&payment_method_types[]=card&description=TEST_PAYMENT&payment_method=$paymentMethod&confirm=true");
+        curl_setopt($ch, CURLOPT_POSTFIELDS, "amount=$tAmount&currency=usd&payment_method_types[]=card&description=TEST_PAYMENT&payment_method=$paymentMethod&confirm=true");
         curl_setopt($ch, CURLOPT_USERPWD, $SECRET_TEST . ':' . '');
 
         $headers = array();

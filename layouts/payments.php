@@ -102,6 +102,10 @@
             <input type="text" class="form-control" id="amount">
             <label for="amount">Amount</label>
         </div>
+        <div class="form-floating col-12 hide">
+            <input type="text" class="form-control" id="t--amount">
+            <label for="t--amount">Total Amount</label>
+        </div>
         <div class="col-12 mt-5 d-grid">
             <button type="button" class="sendMoney btn btn-primary">Send Money</button>
         </div>

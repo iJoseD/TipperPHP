@@ -170,7 +170,8 @@ $('.card-custom .overlay').click(function() {
     $('.tCost').html('$' + tCost.toFixed(2));
     $('.total-amount').html('$' + totalPayment.toFixed(2));
 
-    $('#amount').val(totalPayment.toFixed(2));
+    $('#amount').val(amount);
+    $('#t--amount').val(totalPayment.toFixed(2));
     $('.payment .amount span').html(totalPayment.toFixed(2));
 });
 
@@ -185,6 +186,7 @@ $('.proceedPay').click(function() {
     var expYear  = $('#exp-year').val();
     var cvv      = $('#cvv').val();
     var amount   = $('#amount').val() * 100;
+    var tAmount  = $('#t--amount').val() * 100;
 
     $.ajax({
         url: '/controller/payment.php',
@@ -195,7 +197,8 @@ $('.proceedPay').click(function() {
             expMonth : expMonth,
             expYear  : expYear,
             cvv      : cvv,
-            amount   : amount
+            amount   : amount,
+            tAmount  : tAmount
         },
         success: function(data) {
             console.log( data );
