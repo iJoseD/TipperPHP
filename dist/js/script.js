@@ -181,6 +181,9 @@ $('.sendMoney').click(function() {
 });
 
 $('.proceedPay').click(function() {
+    $('.payment').addClass('hide');
+    $('.processing-payment').removeClass('hide');
+
     var ccnum    = $('#ccnum').val();
     var expMonth = $('#exp-month').val();
     var expYear  = $('#exp-year').val();
@@ -209,6 +212,8 @@ $('.proceedPay').click(function() {
                 console.log( data );
             } if ( data == 'successful_payment' ) {
                 console.log( data );
+                $('.processing-payment').addClass('hide');
+                $('.successful-payment').removeClass('hide');
             }
         },
         error: function() {
