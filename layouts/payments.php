@@ -173,7 +173,10 @@
 
     <!-- Successful payment -->
     <div class="row mt-5 successful-payment hide">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_hpd7f5j0.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        <div class="col-12">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_yo2zavgg.json" background="transparent" speed="1" style="width: 300px; height: 300px; margin: 0 auto;" autoplay></lottie-player>
+            <span class="mt-3">Successful payment!</span>
+        </div>
     </div>
 </section>
