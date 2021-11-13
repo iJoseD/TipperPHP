@@ -67,7 +67,7 @@ if ( $caso == 'codeActivation' ) {
             echo 'error_update_db';
         }
     } else { // Si el número de teléfono no existe en la base de datos
-        $sql = "INSERT INTO userProfile (avatar, dni, firstname, lastname, email, phone, address, superPower, codeActivation, status, idStripe, idTyt, date) VALUES ('', '', '', '', '', '$phone', '', '', '$code', 'pending_activation', '', '$idTyt' '$date')";
+        $sql = "INSERT INTO userProfile (avatar, dni, firstname, lastname, email, phone, address, superPower, codeActivation, status, idStripe, idTyt, date) VALUES ('', '', '', '', '', '$phone', '', '', '$code', 'pending_activation', '', '$idTyt', '$date')";
 
         if ($conn->query($sql) === TRUE) {
             $ch = curl_init();
