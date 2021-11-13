@@ -14,6 +14,7 @@ $caso       = $_POST['caso'];
 $phone      = $_POST['phone'];
 $phoneSms   = str_replace( '+', '%2B', $_POST['phone'] );
 $code       = rand(1000, 9999);
+$idTyt      = 'TYT'.rand(100000, 999999);
 $date       = date('Y-m-d H:m:s');
 
 // twilloAuthentication
@@ -66,7 +67,7 @@ if ( $caso == 'codeActivation' ) {
             echo 'error_update_db';
         }
     } else { // Si el número de teléfono no existe en la base de datos
-        $sql = "INSERT INTO userProfile (avatar, dni, firstname, lastname, email, phone, address, superPower, codeActivation, status, date) VALUES ('', '', '', '', '', '$phone', '', '', '$code', 'pending_activation', '$date')";
+        $sql = "INSERT INTO userProfile (avatar, dni, firstname, lastname, email, phone, address, superPower, codeActivation, status, idStripe, idTyt, date) VALUES ('', '', '', '', '', '$phone', '', '', '$code', 'pending_activation', '', '$idTyt' '$date')";
 
         if ($conn->query($sql) === TRUE) {
             $ch = curl_init();
