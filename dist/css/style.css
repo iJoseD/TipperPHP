@@ -83,7 +83,7 @@ img.card-img-top {
   padding: 1em;
   border-radius: 2em;
   width: 250px;
-  height: 300px;
+  height: auto;
   object-fit: cover;
   margin: 0 auto;
 }
