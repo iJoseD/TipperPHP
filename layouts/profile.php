@@ -64,7 +64,7 @@
     </div>
     <div class="row text-center mt-5">
         <div class="col-12">
-            <h4 class="text--orange">Which is your super power?</h4>
+            <h4 class="text--orange">What is your Superpower?</h4>
         </div>
     </div>
     <div class="row mt-4">
@@ -86,7 +86,7 @@
             <span class="super-power influencer" data-superPower="Influencer">Influencer</span>
         </div>
         <div class="col-4 d-grid">
-            <span class="super-power speaker" data-superPower="Speaker">Speaker</span>
+            <span class="super-power musician" data-superPower="Musician">Musician</span>
         </div>
     </div>
     <div class="row hide">
