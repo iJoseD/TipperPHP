@@ -13,7 +13,7 @@
 
     <div class="row mt-4">
         <div class="col-12 text-center">
-            <p class="text-white" style="font-weight: 800;">I'm <?php echo $_SESSION['firstName']; ?> and my super power is:</p>
+            <p class="text-white" style="font-weight: 800;">I'm <?php echo $_SESSION['firstName']; ?> and I'm a:</p>
         </div>
     </div>
 

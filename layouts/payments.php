@@ -37,7 +37,7 @@
             <img src="<?php echo $avatar; ?>" alt="Profile Avatar" width="50%">
         </div>
         <div class="col-12 mt-3 text-center">
-            <p class="text--blue">I'm <?php echo $firstName; ?> and my super power is:</p>
+            <p class="text--blue">I'm <?php echo $firstName; ?> and I'm a:</p>
         </div>
         <div class="col-12 text-center">
             <span class="superPower">To <?php echo $superPower; ?></span>
