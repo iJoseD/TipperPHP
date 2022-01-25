@@ -7,7 +7,7 @@
 <section class="container s--myqr">
     <div class="row">
         <div class="col-12 text-center">
-            <a href="/"><img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newLogo-W.svg" width="60%" alt="Logo ThankYou Tipper"></a>
+            <a href="/"><img src="/dist/img/newLogo-W.svg" width="60%" alt="Logo ThankYou Tipper"></a>
         </div>
     </div>
 

@@ -28,7 +28,7 @@
 <section class="container mb-5">
     <div class="row mt-3">
         <div class="col-12 text-center">
-            <a href="/"><img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newLogo.svg" width="60%" alt="Logo ThankYou Tipper"></a>
+            <a href="/"><img src="/dist/img/newLogo.svg" width="60%" alt="Logo ThankYou Tipper"></a>
         </div>
     </div>
     
