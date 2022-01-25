@@ -19,7 +19,7 @@
 
     <div class="row mt-5">
         <div class="col-12 text-center">
-            <span class="superPower">To <?php echo $_SESSION['superPower']; ?></span>
+            <span class="superPower"><?php echo $_SESSION['superPower']; ?></span>
         </div>
     </div>
     <div class="row">

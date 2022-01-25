@@ -40,7 +40,7 @@
             <p class="text--blue">I'm <?php echo $firstName; ?> and I'm a:</p>
         </div>
         <div class="col-12 text-center">
-            <span class="superPower">To <?php echo $superPower; ?></span>
+            <span class="superPower"><?php echo $superPower; ?></span>
         </div>
     </div>
 
