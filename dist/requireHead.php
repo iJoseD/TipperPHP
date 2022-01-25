@@ -17,10 +17,10 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <link rel="icon" href="https://thankyoutipper.com/wp-content/uploads/2021/08/cropped-favicon2-32x32.jpg" sizes="32x32">
-    <link rel="icon" href="https://thankyoutipper.com/wp-content/uploads/2021/08/cropped-favicon2-192x192.jpg" sizes="192x192">
-    <link rel="apple-touch-icon" href="https://thankyoutipper.com/wp-content/uploads/2021/08/cropped-favicon2-180x180.jpg">
-    <meta name="msapplication-TileImage" content="https://thankyoutipper.com/wp-content/uploads/2021/08/cropped-favicon2-270x270.jpg">
+    <link rel="icon" href="/dist/img/cropped-favicon2-32x32.jpg" sizes="32x32">
+    <link rel="icon" href="/dist/img/cropped-favicon2-192x192.jpg" sizes="192x192">
+    <link rel="apple-touch-icon" href="/dist/img/cropped-favicon2-180x180.jpg">
+    <meta name="msapplication-TileImage" content="/dist/img/cropped-favicon2-270x270.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
     <!-- Bootstrap CSS -->

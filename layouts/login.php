@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-12">
                     <figure class="iconotipo text-center">
-                        <img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newIsotipo.svg" alt="Logo ThankYou Tipper">
+                        <img src="/dist/img/newIsotipo.svg" alt="Logo ThankYou Tipper">
                     </figure>
                 </div>
             </div>
@@ -14,7 +14,7 @@
                 </div>
                 <div class="col-6">
                     <figure class="logo text-start">
-                        <img src="https://thankyoutipper.com/wp-content/uploads/2021/08/newLogo-W.svg" alt="Logo ThankYou Tipper">
+                        <img src="/dist/img/newLogo-W.svg" alt="Logo ThankYou Tipper">
                     </figure>
                 </div>
             </div>
